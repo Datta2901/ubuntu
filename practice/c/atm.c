@@ -15,7 +15,7 @@ d=pow(a,2);
     }    
     else
     {
-        printf("%f-\n",b);
+        printf("%f\n",b);
     }
   printf("%d",d) ; 
 }
