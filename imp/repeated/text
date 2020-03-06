@@ -1,0 +1,2 @@
+to find the occurences of the character in a string 
+scanf("%[^\n]%*c", str); // to raed the spaces b/w the characters of a string
