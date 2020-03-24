@@ -1,0 +1,5 @@
+to  compile c use gcc as compiler
+
+to compile c++ use g++ as compiler
+
+to compile python use pypy as compiler

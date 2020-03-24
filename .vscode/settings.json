@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "array": "c",
+        "functional": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c",
+        "iostream": "cpp",
+        "iosfwd": "cpp"
+    }
+}
