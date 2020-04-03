@@ -44,11 +44,11 @@ int main(void)
         continue;
         else
         y--;}
-        
+
         }
-        
-        printf("%d %d\n",x,y);
-        
+
+        printf("%d %d\n",x,y);  
+         
     }
     
     return 0;

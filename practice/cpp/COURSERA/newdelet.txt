@@ -1,0 +1,7 @@
+ char*s=new char[size] ; //gets to heap memory 
+
+int *p=new int(9) ;//single int initialised
+
+delete [] s ;//delete an array
+
+delete p ;//delete a single element
