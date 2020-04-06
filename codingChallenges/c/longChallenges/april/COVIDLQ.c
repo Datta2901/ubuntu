@@ -7,7 +7,7 @@ int main()
     scanf("%d",&t) ;
     while(t--)
     {
-        int n,a,c=0 ;
+        int n,c=0 ;
         scanf("%d",&n) ;
         int *stand ;
         stand =(int*)malloc(n*sizeof(int)) ;
@@ -15,25 +15,30 @@ int main()
         {
             scanf("%d",&stand[i]) ;
         }
-        loop(n)
+        for(int i=0;i<n;)
         {
-
-            if(stand[i]==1&& (stand[i-1]!=1||i==0))
-            {
-                for(i=0;i<5;i++)
-                {    if(stand[i+1]==1)
+            if(stand[i]==1)
+            { 
+                printf("%d",i) ;
+                for(int j=i;j<5;j++)
+                {    if(stand[j+1]==1)
                     {
                         c++ ;
                         break ;
                     }
                 }    
             }
+           
             if(c!=0)
             {
                 break ;
             }
+            printf(" i= %d\n",i) ;
             if(c==0)
-            {i=i+4 ;}
+             if(i+6<n)
+            {i=i+5 ;}    
+             printf(" %d",i) ;
+           
         }
         if(c==0)
         {
