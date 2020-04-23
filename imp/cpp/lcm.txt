@@ -1,0 +1,41 @@
+#include<boost/math/common_factor.hpp> 
+||
+#include<numeric>
+
+std::lcm(m,n);
+boost::math::lcm (m,n)
+Parameters: m, n
+Return Value: 0 if either m or n are zero,
+else lcm of mod(m) and mod(n).
+    //this is inbuilt function in cpp to ccalculate lcm
+
+
+    algorithm :
+
+    find hcf 
+
+    and then lcm = num1 * num2 /hcf ;
+
+    or direct method
+
+
+int main()
+{
+    int n1, n2, max;
+    cout << "Enter two numbers: ";
+    cin >> n1 >> n2;
+    max = (n1 > n2) ? n1 : n2;
+
+    do
+    {
+        if (max % n1 == 0 && max % n2 == 0)
+        {
+            cout << "LCM = " << max;
+            break;
+        }
+        else
+            ++max;
+    } while (true);
+    
+    return 0;
+}

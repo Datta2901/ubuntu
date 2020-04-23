@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>//using vectors
 #include<vector>
 #include <bits/stdc++.h> 
 #define loop(n) for(int i=0;i<n;i++)

@@ -1,0 +1,3 @@
+v.pop_back(); //removes the last element of the vector
+v.push_back();//add the elements to the back vector
+v.push_front();//adds front 

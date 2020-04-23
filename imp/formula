@@ -1,0 +1,8 @@
+The first Fibonacci numbers are
+0,1,1,2,3,5,8,13,21,34,55,...
+
+There is also a closed-form formula for calculating Fibonacci numbers, which is
+sometimes called Binet’s formula:
+
+    f(n) = (1+sqrt5)^n - (1 - sqrt5)^n / 2^n *(sqrt5) .
+

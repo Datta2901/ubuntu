@@ -1,0 +1,15 @@
+#include <algorithm>
+
+ __gcd(m, n) 
+Parameter :  m, n
+Return Value :  0 if both m and n are zero, 
+else gcd of m and n.
+
+
+algorithm:
+
+for(int i = max(num1,num2); i >= 1; i++ ){
+    if(num1 % i ==0 && num2 % i == 0)
+     cout << " hcf of num1 ,num2 =" << i ;
+     break ; 
+}
