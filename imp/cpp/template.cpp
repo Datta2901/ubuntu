@@ -1,8 +1,13 @@
 #include<bits/stdc++.h>
 #define loop(n) for(int i=0;i<n;i++)
+#define EXECUTE_FASTER ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define inc_sort(v) sort(v.begin(),v.end());
+#define pb push_back
+#define endl '\n'
 using namespace std;
 int main()
  {
+    EXECUTE_FASTER
     ifstream cin("input.txt");
     ofstream cout("output.txt");
 
@@ -11,9 +16,4 @@ int main()
     cout << a;
 
 
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL); //three lines of code to speed up the input and output 
-    //its always better to use scanf and printf  in program than cin and cout .we have to include the above library 
-    // they will take less time
 }
