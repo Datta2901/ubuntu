@@ -30,6 +30,9 @@ int main(){
 
         sort(zero.begin(),zero.end());
         sort(one.begin(),one.end());
+        if(zero.size() == 0 ||one.size() == 0){
+            cout << "no\n" ;
+        }
 
         if((zero[0] + one[0] + cost) <= 100){
             cout << "yes\n"; 

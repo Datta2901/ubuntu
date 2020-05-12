@@ -1,0 +1,8 @@
+
+map name.insert(pair<int, int>(1, 40)); 
+    if you want to use pair;
+
+
+  map<int,vector<int> > data;
+  data[a].push_back(b);   
+    if you want to use vectors
