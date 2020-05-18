@@ -50,21 +50,7 @@ bool IsFirstGreaterThanSecond(vector<ll> num1, vector<ll>num2){
         
     else if (num2.size() > num1.size()){
         return false;
-    }
-        
-    
-    // for( ll i : num1){
-    //     if (num1[i] == num2[i]){
-    //         continue;
-    //     }     
-    //     else if( num1[i] == 1){
-    //         return true;
-    //     } 
-    // return false;
-    // }
-        
-       
-    
+    }    
 }
 int main()
 {
@@ -90,11 +76,8 @@ int main()
         getBinary(r,binR);
 
         ll sizeDiff = binC.size() - binR.size();
-        if(sizeDiff > 0){
-            loop(sizeDiff){
-                binC.erase(binC.begin()+i);
-            }
-        }
+        if(sizeDiff > 0)
+        binC.erase(binC.begin(),binC.begin()+sizeDiff);
     
         ll decC = getDecimal(binC);
         ll decR = getDecimal(binR);

@@ -1,152 +1,85 @@
 #include<iostream>
 #include<bits/stdc++.h>
 #include<vector>
+#define loop(n) for(int i=0;i<n;i++)
+#define loop1(n) for(int i = n-1; i >= 0; i-- )
+#define EXECUTE_FASTER ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 using namespace std;
 #define ll long long int
-void binaryConvertion(ll n,vector<ll> & vect ){
+
+void getBinary(ll n,vector<ll> & vect ){
     ll c =0,ans = 0;
     for(ll a=0,b=0,i=0;n>0;n=n/2,i++){
       a = n/2 ;
       b = n%2 ;
-      c= ((pow(10,i))*b)+c;
+      vect.insert(vect.begin(),b);
     }
+} 
 
-    for(; c != 0; c= c/10){   
-         ll a = c % 10 ;
-          ans=ans*10+ a ;  
-      }
-
-    for(;ans > 0; ans = ans /10){
-        vect.insert(vect.begin(),ans % 10);
+ll getDecimal(vector<ll> & binC){
+    ll n=0,c =0;
+   for(ll i = binC.size()-1,b = 0; i >=0; i--,b++){
+        n += binC[i]*pow(10,b);
     }
- 
-}
-
-
-void isgreaterThanRight(vector<ll> & right,vector<ll> & answer){
-    for(int i = 0; i < right.size(); i++){
-        if(right[i] == 1 ){
-            if(answer[i] == 1){
-                ;
-            }else{
-                answer[i] == 0;
-                break;
-            }
-        }
+    for(ll a,i = 0;n > 0; i++,n = n/10){
+        a =n%10 ;
+        c =(pow(2,i))*a+c ; 
     }
     
-}
-
-
-void islesserThanleft(vector<ll> & left,vector<ll> &answer){
-    for(int i = 0; i < left.size();i++){
-        if(left[i] == 1){           
-            if(answer[i] == 0){
-                answer[i] =1;
-            }else{
-                break;           
-            }
-        }
-    }       
-
-
-}           
-
-bool CheckgreaterthanRight(vector<ll> right,vector<ll> answer){
-    for(int i = 0; i < right.size(); i++){
-        if(answer[i] == 1 && right[i] != 0  ){
-            return false;
-        }
-    }
-    return true;
-}
-
-bool ChecklesserthanLeft(vector<ll> left,vector<ll> answer){
-    for(int i = 0; i < left.size(); i++){
-            if(answer[i] == 1 ){
-                if( left[i] != 0  ){
-                    return false;
-            }
-        }
-    }
-    return true;
-}
-
-ll binaryToDecimal(vector<ll> answer){
-    ll n = 0,c;
-    for(vector<ll> :: iterator it = answer.begin(); it !=answer.end(); it++){
-     n += *it * 10;
-    }
-    for(ll i = 0,c = 0;n > 0; i++,n = n/10)
-    {
-     ll  a =n%10 ;
-    c =(pow(2,i))*a+c ;
-    }
     return c;
 }
 
+void cal(ll a,ll b,ll c){
+    if ((a & c) == 0 or (b & c) == 0){
+        cout << 0 << endl;
+    }
+    else{
+        cout << c << endl;
+    }  
+
+}
+void checkMaxCommon(vector<ll> binC,vector<ll> binR,int *k){
+    int i;
+    for(i = 0; binC[i] == binR[i]; i++){
+    }
+    k = &i;
+}
 int main(){
+    EXECUTE_FASTER
     int t;
-    bool flag = true,skip=true ;
     cin >> t;
-    ll a,b,l,r,c,answer ,Z=0;
+    ll a,b,l,r,c,d;
     while(t--){
         cin >> a >> b >> l >> r ;
         c = a | b;
-        if( c >= l && c <= r){
-            cout << c << endl;
+        if( c <= r){
+            cal(a,b,c);
             continue;
         }
-        vector<ll> left,right,answer;
-        binaryConvertion(c,answer);
-        binaryConvertion(l,left);
-        binaryConvertion(r,right);
-        cout << c << endl;
-        for(vector<ll> :: iterator it =answer.begin(); it != answer.end(); it++){
-            cout << *it;
+
+        vector<ll> left,binR,binC,answer;
+        getBinary(c,binC);
+        getBinary(r,binR);
+        int k;
+        checkMaxCommon(binC,binR,&k);
+
+        for(int i = 0; i < k; i++){
+            answer.insert(answer.begin(),binR[i]);
+        }
+        answer.insert(answer.begin(),0);
+        for(ll i = answer.size(); i < binC.size();i++){
+            answer.push_back(binC[i]);
         }
 
-        if(right.size() != answer.size()){
-            for(int i = 0; ; i++){
-                answer[i] = 0;
-                if( right[i] == 1){
-                    answer[i] =1; 
-                    break;
-                }
-            }
+        c = getDecimal(answer);
+        if( c <= r){
+            cal(a,b,c);
+            continue;
         }
 
-       
-        if(left.size() != answer.size()){
-            for(int i = 0; ; i++){
-                answer[i] = 0;
-                if( left[i] == 1){
-                    answer[i] =1; 
-                    break;
-                }
-            }
-        }
 
-   
-    while(flag){
-        isgreaterThanRight(right,answer);
-        flag = CheckgreaterthanRight(right,answer);
-        if(flag){
-            break;
-        }
+
+
     }
-
-     while(skip){
-         islesserThanleft(left,answer);
-         skip = ChecklesserthanLeft(left,answer);
-         if(skip){
-             break;
-         }
-     }   
-
-
-    Z = binaryToDecimal(answer);
-    cout << endl << Z << endl;
-  
-    }
-}           
+    return 0;
+}
