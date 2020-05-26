@@ -1,0 +1,19 @@
+use #include<cassert> likbrary
+
+syntax : assert(one logical condition)
+
+process : as follows
+       //  your code{
+      //       ...
+     //       }
+    //if the logical condition is true then only the program continues
+   //otherwuse a error symbol will be displayed by the compiler at the 
+  // run time..
+
+   ~~if u want to disable the assert then use
+   below macro
+
+    #define NDEBUG //imp
+
+    eg: if your answer is correct locally for some test conditions 
+    you want to submit the problem then the above macro is useful

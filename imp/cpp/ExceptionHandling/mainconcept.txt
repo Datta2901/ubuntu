@@ -1,0 +1,19 @@
+There are three key words to handle exceptions in c++
+    
+    1.try
+    2.throw
+    3.catch
+
+
+syntax for above keywords:
+    
+    1.   try{
+
+            2.throw x;             if you want to return a integers
+              throw "    " ;       if you want to get a message wite it inside the string("   ")
+                                 the throw must be witten inside the try
+        }       
+    3. catch(...)                this will receive any kind of messages which is thrown by the try
+                                 after the throw  the below statements wont run
+
+      catch(int exc)             when int is thrown by the throw then the catch(int exc) will receive the int                         

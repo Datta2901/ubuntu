@@ -27,10 +27,10 @@ int main()
  }
     // ifstream cin("input.txt");
     // ofstream cout("output.txt");
-
+   /*freopen("input.txt","r",stdin);
+    freopen("output.txt","a",stdout);*/
     // int a;
     // cin >> a;
     // cout << a;
-
 
 // }

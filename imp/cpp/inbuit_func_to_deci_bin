@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+unsigned int n;
+cout << "# Decimal: "; cin >> n; cout << endl;
+
+bitset<16>binary(n);
+        |
+       / \
+       represents the number of bits
+
+cout << "# Binary: " << binary << endl;
+
+ return 0;
+}

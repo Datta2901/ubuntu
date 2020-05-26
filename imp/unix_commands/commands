@@ -1,0 +1,21 @@
+1.dircmp: This command is used to compare the contents of directories.
+
+Description: This command works on older versions of Unix. In order to compare the directories in the newer versions of Unix, we can use diff -r
+
+Syntax: dircmp [options] dir1 dir2
+
+2.diff: This command is used to compare two files line by line.
+
+Description: The output indicates how the lines in each file are different, and the steps invoved to change file1 to file2. The ‘patch’ command can be used to make the suggested changes. The output is formatted as blocks of:
+Change commands
+
+< lines from file1
+—
+> lines from file2
+
+The change commands are in the format [range][acd][range].  The range on the left may be a line number or a comma-separated range of line numbers referring to file1, and the range on the right similarly refers to file2.  The character in the middle indicates the action i.e. add, change or delete.
+
+‘LaR’ – Add lines in range ‘R’ from file2 after line ‘L’ in file1.
+‘FcT’ – Change lines in range ‘F’ of file1 to lines in range ‘T’ of file2.
+‘RdL’ – Delete lines in range ‘R’ from file1 that would have appeared at line ‘L’ in file2
+Syntax: diff [options] file1 file2

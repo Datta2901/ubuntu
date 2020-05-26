@@ -1,0 +1,8 @@
+preents in bits library
+
+syntax =  *max_element(starting ,ending)
+
+    eg:inplace of starting = arr,ending = arr + n
+    it will return you the maximum elemnt in that array
+
+    lly inplace of max put min to find min 
