@@ -95,5 +95,6 @@
         "borderColor : {color}; opacity: 0.5"
     ],
     "bracketPairColorizer.showVerticalScopeLine": false,
-    "bracketPairColorizer.showHorizontalScopeLine": false
+    "bracketPairColorizer.showHorizontalScopeLine": false,
+    "competitive-programming-helper.firstTime": false
 }
