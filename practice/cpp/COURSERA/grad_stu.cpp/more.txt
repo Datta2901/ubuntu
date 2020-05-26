@@ -1,0 +1,67 @@
+The following applies to examples in the segments of the video lectures from C++ For C Programmers Part B 2.10(The Inheritance Mechanism), 2.11(A Derived Class) and 2.12 (Students and Graduate Students).
+
+The student – graduate_student code as given in the text and lectures(if not yet modified) is outdated. It was initially meant to capture the easily understood ISA relationship between a base class (student) and a publically derived class(graduate_student).
+
+The code uses char* to express certain data. This was in use in C and early versions of C++. So it is natural for a C programmer to grasp it.  This functionality remains when using routines found in <cstring>. Modern C++ has moved on to the use of <string> as a basic type. 
+
+We will give code files for the code as originally displayed in early versions of the course and text and rewrite using string.
+ 
+The string is a container for type character. Its interface is similar to other sequential container types.
+It allows the use of iterators. Here is a small sample of its functionality. 
+
+
+ 
+size
+Return length of string (public member function )
+clear
+Clear string (public member function )
+empty
+Test if string is empty (public member function )
+
+Element access:
+
+
+operator[]
+Get character of string (public member function )
+at
+Get character in string (public member function )
+back 
+Access last character (public member function )
+front 
+Access first character (public member function )
+
+Modifiers:
+
+
+operator+=
+Append to string (public member function )
+append
+Append to string (public member function )
+swap
+Swap string values (public member function )
+pop_back 
+Delete last character (public member function )
+
+String operations:
+
+
+c_str
+Get C string equivalent (public member function )
+find
+Find content in string (public member function )
+compare
+Compare strings (public member function )
+
+
+
+operator+
+Concatenate strings (function )
+operator>>
+Extract string from stream (function )
+operator<<
+Insert string into stream (function )
+getline
+Get line from stream into string (function )
+ 
+ 
+ 
