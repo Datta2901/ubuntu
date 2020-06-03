@@ -1,0 +1,1 @@
+[{"input":"3 6\nCLICK 1\nCLICK 2\nCLICK 3\nCLICK 2\nCLOSEALL\nCLICK 1","output":"1\n2\n3\n2\n0\n1"}]
