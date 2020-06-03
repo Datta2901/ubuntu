@@ -1,3 +1,6 @@
 v.pop_back(); //removes the last element of the vector
 v.push_back();//add the elements to the back vector
-v.push_front();//adds front 
+v.insert(v.begin(),value u want to insert );//adds front 
+count(v.begin(),v.end(),value u want to count) // count the occurrence of particular element
+vector<int>::iterator it = find(v.begin(),v.end(),element to find) // to find the element pos in vector
+answer = it - v.begin() // gives answer from starting 

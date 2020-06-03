@@ -96,5 +96,6 @@
     ],
     "bracketPairColorizer.showVerticalScopeLine": false,
     "bracketPairColorizer.showHorizontalScopeLine": false,
-    "competitive-programming-helper.firstTime": false
+    "competitive-programming-helper.firstTime": false,
+    "C_Cpp.dimInactiveRegions": false
 }
