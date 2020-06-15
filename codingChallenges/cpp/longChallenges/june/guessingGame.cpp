@@ -12,19 +12,36 @@ using namespace std;
 
 int main(){
 
-    int number;
+    int number,a = 1,b;
     cin >> number;
+    int mid = (1 + number)/2;
+    char c = 'G';
+    while(c != 'E'){
+        loop(2){ 
+            bool flag = false,skip = false;
+            cout << 1 << endl;
+            cin >> c;
+            if(c == 'E'){
+                break;
+            }else if(c == 'L'){
+                 flag = true;
+            }
+           cout << mid << endl;
+           cin >> c;
+           if(flag){
+               break;
+           }
+        }
 
+       if(c =='L'){
+            mid = (a + mid)/2;
+       }else if(c == 'G'){
+           mid = (mid + number)/2;   
+       }else if (c == 'E'){
+           break;
+       }  
+    }
 
-
-
-
-
-
-
-
-
-
-
+    
     return 0;
 }

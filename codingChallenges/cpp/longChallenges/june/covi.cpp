@@ -9,39 +9,76 @@
 using namespace std;
 #define vectInput(vect,n) for(int i=0;i<n;i++){ int a; cin >> a; vect.pb(a);}
 
+// 1
+// 5 5
+// 1 1 1 1 5
+// 2
+// 1 1 1 1 1
+// 1
+// 1 1 2 2 1
+// 1
+// 1 2 1 2 5
+// 0
+// 1 3 1 3 5
+// 0
+// 1 4 1 4 5
+// 1
+// 1 4 1 1 4
+// 1
+// 1 4 2 2 4
+
 int main(){
     int t;
     cin >> t;
     while(t--){
         int n,p;
-        int x,count = 0;
+        int x,c,count = 0;
         cin >> n >> p;
-        cout << 1<<" " << 1 << " " << 1 << " " << 60 << " " << 60 << endl;
-        cin >> x;
-        cout << 2 << endl;
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < n; j++){
-                if( i == j && count <= x){
-                    cout << 1 <<" ";
-                    count++;
-                }else{
-                    cout << 0 << " ";
-                }   
-            }
-            cout << endl;
+        vector< vector<int> > pattern(n,vector<int> (n,0));
+                for(int i = 0; i < n; i++){
+                    cout  << 1 << " " << i + 1 <<" " << 1 << " " << i + 1 << " "<< n << endl;
+                    cin >> x;
+                    count = 0;
+                    for(int j = 0; j < n; j++){
+                        if(x == 0){
+                            continue;
+                        }
+                        if(x == n){
+                            for(int j = 0; j < n; j++){
+                                pattern[i][j] = 1;
+                            }
+                            break;
+                        }
+                        if(x - count  == n - j){
+                            for( j = j; j < n; j++){
+                                pattern[i][j] = 1;
+                            }
+                            break;
+                        }
+                        cout << 1 << " " << i+1 << " " << j+1 <<" " << i+1<<" " <<  j+1 << endl;
+                        cin >> c;
+                
+                        if(c == 1 && count <= x){
+                             pattern[i][j] = 1;
+                             count++;
+                             if(count == x){
+                             break;
+                            }
+                        }
+                    
+                }
+               continue;
         }
-        cin >> x;
 
-
+            cout << 2 << endl;
+            for(int i = 0; i < n; i++){
+                for(int j = 0; j < n; j++){
+                    cout << pattern[i][j] << " " ;
+                }
+                cout << endl;
+            }
+            cin >> x;
     }
-
-
-
-
-
-
-
-
 
     return 0;
 }
