@@ -8,30 +8,26 @@
 using namespace std;
 int main(){
     EXECUTE_FASTER
-    int t,size;
+    int t;
     cin >> t;
     while(t--){
-        int sum = 0,sumb = 0,suma = 0;
-    cin >> size;
-        vector<int> bob,alice;
-        loop(size){
-            int a;
-            cin >> a;
-            bob.pb(a);
-        }loop(size){
-            int a;
-            cin >> a;
-            alice.pb(a);
-        }loop(size){
-           
-            if( bob[i] == alice[i] && suma == sumb){
-                sum += bob[i]; 
+        int count0 = 0, count1 = 0;
+        string s;
+        cin >> s;
+        loop(s.size()){
+            if((s[i] - 48) == 0)//due to ascii value or if(s[i] == '0')
+            {
+                count0++;
+            }else{
+                count1++;
             }
 
-            suma += alice[i];
-            sumb += bob[i];
         }
-    cout << sum << endl;
+        if(count0 == 1 || count1 == 1){
+            cout <<"Yes\n";
+        }else{
+            cout << "No\n";
+        }
     }
     return 0;
 }
