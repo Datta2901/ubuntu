@@ -2,7 +2,7 @@
 #include <bits/stdc++.h> 
 using namespace std; 
 
-class Node { 
+struct Node { 
 public: 
 	int data; 
 	Node* next; 
@@ -15,7 +15,14 @@ void printList(Node* n)
 		n = n->next; 
 	}
 	cout << endl; 
-} 
+}
+
+Node* addAnode(int d){
+	Node* node = new Node();
+	node->data = d;
+	node->next = NULL;
+	return node;
+}
 
 pair<bool,int> search(Node* n,int key){
 	int count = 1;
