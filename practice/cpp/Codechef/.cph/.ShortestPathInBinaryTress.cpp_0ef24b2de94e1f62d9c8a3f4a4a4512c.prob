@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: ShortestPathInBinaryTress","srcPath":"/home/manikanta/ubuntu/practice/cpp/Codechef/ShortestPathInBinaryTress.cpp","tests":[{"id":1595676527462,"input":"3\n1 2\n2 3\n4 3","output":"1\n2\n 3 "}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/practice/cpp/Codechef/ShortestPathInBinaryTress.cpp"}

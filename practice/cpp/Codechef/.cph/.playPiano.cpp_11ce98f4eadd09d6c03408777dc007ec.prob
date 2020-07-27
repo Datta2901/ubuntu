@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: playPiano","srcPath":"/home/manikanta/ubuntu/practice/cpp/Codechef/playPiano.cpp","tests":[{"id":1594915718854,"input":"4\nAB\nABBA\nABAABB\nAA","output":"yes\nyes\nno\nno"}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/practice/cpp/Codechef/playPiano.cpp"}

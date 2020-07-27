@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: ChefAndSteps","srcPath":"/home/manikanta/ubuntu/practice/cpp/Codechef/ChefAndSteps.cpp","tests":[{"id":1595746492577,"input":"1\n5 3\n12 13 18 20 27216","output":"10101"}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/practice/cpp/Codechef/ChefAndSteps.cpp"}

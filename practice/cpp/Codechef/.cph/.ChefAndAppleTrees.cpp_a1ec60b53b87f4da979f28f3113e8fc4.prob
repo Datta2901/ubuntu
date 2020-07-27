@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: ChefAndAppleTrees","srcPath":"/home/manikanta/ubuntu/practice/cpp/Codechef/ChefAndAppleTrees.cpp","tests":[{"id":1595598961568,"input":"2\n3\n3 3 3\n4\n1 2 3 3","output":"1\n3"}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/practice/cpp/Codechef/ChefAndAppleTrees.cpp"}
