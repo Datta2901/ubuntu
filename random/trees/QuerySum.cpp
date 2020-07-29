@@ -23,14 +23,29 @@ void build(int a[],int index,int low,int high){
 
 // can be calculated in log(n)
 int sum(int index,int low,int high,int l,int r){
-    if(l > r){
+    if(l > r){              // not in the given range 
         return 0;
     }
-    if(l == low && r == high){
-        return t[index];
+    if(l == low && r == high){      // completely lies in the given range
+        return tree[index];    
     }
     int mid = (low + high) / 2;
     return sum(2 * index,low,mid,l,min(mid,r)) + sum(2 * index + 1,mid + 1,high,max(mid + 1,l),r); 
+}
+
+// update will be work in O(logn)
+void update(int v,int tl,int tr,int pos,int new_val){
+    if(tl == tr){
+        tree[v] = new_val;
+    }else{
+        int tm = (tl + tr) / 2;
+        if(pos <= tm){
+            update(2 * v,tl,tm,pos,new_val);
+        }else{
+            update(2 * v + 1,tm + 1,tr,pos,new_val);
+        }
+        tree[v] = tree[2 * v] + tree[2 * v + 1];
+    }    
 }
 
 
@@ -46,9 +61,9 @@ int main(){
     }
     build(arr,1,1,n);
 
-    cout << "Segment highee is ";
+    cout << "Segment tree is ";
     for(int i = 1; i < 4 * n; i++){
-        cout << t[i] << " " ;
+        cout << tree[i] << " " ;
     }
     cout << endl;
     cout << "Enter the number of queries \n";
@@ -60,6 +75,15 @@ int main(){
         cin >> l >> r;
         cout << "Sum from " <<  l  << " to " << r << " is ";
         cout << sum(1,1,n,l,r) << endl;
+        cout << "Enter the postion and value of the element want to be updated " << endl;
+        int pos,value;
+        cin >> pos >> value;
+        update(1,1,n,pos,value);
+        cout << "Segment tree updated with " << pos << " and " <<  value  << " is ";
+        for(int i = 1; i < 4 * n; i++){
+            cout << tree[i] << " " ;
+        }
+        cout << endl;
     }
     return 0;
 }
