@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: CommonPrefix","srcPath":"/home/manikanta/ubuntu/practice/cpp/codeforces/CommonPrefix.cpp","tests":[{"id":1595754687182,"input":"4\n4\n1 2 4 2\n2\n5 3\n3\n1 3 1\n3\n0 0 0","output":""}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/practice/cpp/codeforces/CommonPrefix.cpp"}
