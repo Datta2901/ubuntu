@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: DigitalLibrary","srcPath":"/home/manikanta/ubuntu/SRM/elab/OOPS/Classes/DigitalLibrary.cpp","tests":[{"id":1597412875890,"input":"7 Dhoni 531\n8 dh 532","output":""}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/SRM/elab/OOPS/Classes/DigitalLibrary.cpp"}
