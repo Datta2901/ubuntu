@@ -1,0 +1,6 @@
+Write a C program to count total number of alphabets, digits or special characters in a string using loop. How to find total number of alphabets, digits and special characters in a string in C programming.
+ TEST CASE 1  INPUT SRM!University@Learning&Centre@1113 
+
+OUTPUT Alphabets=27 Digits=4 Special characters=4 
+TEST CASE 2  INPUT SRM1114###!!!@@@ 
+OUTPUT Alphabets=3 Digits=4 Special characters=9
