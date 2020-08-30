@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: Medel","srcPath":"/home/manikanta/ubuntu/practice/cpp/Codechef/Medel.cpp","tests":[{"id":1595944368653,"input":"2\n3\n2 5 3\n10\n38 9 102 10 96 7 46 28 88 13","output":"2 5 \n102 7"}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/practice/cpp/Codechef/Medel.cpp"}

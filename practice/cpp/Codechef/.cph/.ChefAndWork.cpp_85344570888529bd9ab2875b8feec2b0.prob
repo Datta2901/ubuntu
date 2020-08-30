@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: ChefAndWork","srcPath":"/home/manikanta/ubuntu/practice/cpp/Codechef/ChefAndWork.cpp","tests":[{"id":1598239921139,"input":"4\n1 1 \n2\n2 4\n1 1\n3 6\n3 4 2\n3 6\n3 4 3","output":""}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/practice/cpp/Codechef/ChefAndWork.cpp"}
