@@ -3,7 +3,7 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-int arr[1111],seg[4444];
+int arr[100005],seg[4 * 100005];
 
 void build(int index, int low, int high){               //building tree
     if(low  == high){
@@ -15,19 +15,20 @@ void build(int index, int low, int high){               //building tree
     build(2 * index + 1,low ,mid);
     build(2 * index + 2,mid + 1,high);
     seg[index] =(seg[2 * index + 1] + seg[2 * index + 2]);
-    cout << "index "<< index <<  " seg[index] "<< seg[index] << " seg[left] " << seg[2 * index + 1]  << " seg[right] " << seg[2 * index + 2] << endl;
+    // cout << "index "<< index <<  " seg[index] "<< seg[index] << " seg[left] " << seg[2 * index + 1]  << " seg[right] " << seg[2 * index + 2] << endl;
 }
 
 long int query(int index,int low,int high,int l,int r){
-    if(low >= l && high <= r){          //given range is completly inside
+    if(low == l && high == r){          //given range is completly inside
+        cout <<"low " << low <<" index "<< index  <<  endl;
         return seg[index];
-    }if(low > r || high < l){
-        return -1;
+    }if(high < l || low > r){          // not in the range
+        return 0;
     }
     int mid = (low + high) / 2;
-    int left = query(index,low,mid,l,r);
-    int right = query(index,mid + 1,high,l,r);
-    return (left + right);
+    int left = query(index,low,mid,l,min(r,mid));
+    int right = query(index,mid + 1,high,max(l,mid + 1),r);
+    return left + right;
 }
 
 int main(){
@@ -37,7 +38,6 @@ int main(){
     for(int i = 0; i < size; i++){
         cin >> arr[i];
     }
-
     build(0,0,size -1);     
 
     cout << " given array is" <<  endl;
@@ -55,7 +55,7 @@ int main(){
     while(q--){
         int l,r;
         cin >> l >> r;
-        cout << query(0,0,size - 1,l,r) << endl;
+        cout << query(0,0,size - 1,l - 1,r - 1) << endl;
     }
     return 0;
 }
