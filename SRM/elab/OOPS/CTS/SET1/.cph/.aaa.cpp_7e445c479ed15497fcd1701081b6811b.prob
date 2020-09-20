@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: aaa","srcPath":"/home/manikanta/ubuntu/SRM/elab/OOPS/CTS/SET1/aaa.cpp","tests":[{"id":1598865320926,"input":"5\n1 2 3 4 5","output":""},{"id":1599213163486,"input":"4\n16 20 14 25","output":""}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/SRM/elab/OOPS/CTS/SET1/aaa.cpp"}
