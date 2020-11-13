@@ -1,0 +1,1 @@
+{"name":"Local: Q12","url":"/home/manikanta/ubuntu/SRM/elab/DataStructures/Queue/Q12.cpp","tests":[{"id":1604229330823,"input":"2\n3 1\n6 3","output":"yes\nno"},{"id":1604229349080,"input":"3\n9 6\n3 2\n6 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/SRM/elab/DataStructures/Queue/Q12.cpp","group":"local","local":true}

@@ -36,7 +36,7 @@ void push(struct node** next_address,int data){
 int main(){
     int size;
     cin >> size;
-    struct node* head = NULL,*a;
+    struct node* head = NULL;
     for(int i = 0; i < size; i++){
         int data;
         cin >> data;

@@ -3,23 +3,26 @@
 #include<iostream>
 using namespace std;
 
-struct node{
+ struct node{
     int data;
     struct node* next;
 };
 
 void printList(struct node *a){
-    cout << "List : ";
+    cout << "Linked List : ";
     while(a != NULL){
-        cout << a->data << " ";
+        cout << "->"<< a->data ;
         a = a->next;
     }
     cout << endl;
+}
+void Create(){
 }
 
 int main(){
     int size;
     cin >> size;
+    int b = size;
     struct node *head = NULL,*temp,*a;
     while(size--){
         struct node* new_node =(struct node*)malloc(sizeof(struct node));
@@ -28,7 +31,7 @@ int main(){
         new_node->data =data;
         if(head == NULL){
             head = new_node;
-            temp = new_node;
+            temp = head;
         }else{
             temp->next = new_node;
             temp = new_node;
@@ -36,19 +39,18 @@ int main(){
     }
     temp->next = NULL;
     temp =  head;
+    // printList(head);
     int times;
     cin >> times;
-    while(times--){
-        if(temp->next != NULL){
-            a = temp->next;
-        }
-        a->next = temp;
-        temp->next = a;
-        temp = temp->next;
-        a = temp;
+  	if(b < times){
+    	times = b;
     }
-    temp = head;
-
+    while(times--){
+        a = temp;
+        head = temp->next;
+        delete(a);  
+        temp=temp->next; 
+    }
     printList(head);
 
     return 0;
