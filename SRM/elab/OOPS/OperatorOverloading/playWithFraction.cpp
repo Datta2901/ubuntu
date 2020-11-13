@@ -25,5 +25,5 @@ int main(){
     e.read();
     answer = d + e;
     cout << answer.a << "/" << answer.b;
-return 0;
+    return 0;
 }

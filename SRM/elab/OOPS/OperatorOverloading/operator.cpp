@@ -5,8 +5,8 @@ using namespace std;
 class mystring{
     public:
         string name;
-        mystring(string a){
-            name = a;
+      	void a(){
+        	cin >> name;
         }
         void operator !(){
             for(int i = 0; i < name.size(); i++){
@@ -18,16 +18,16 @@ class mystring{
                 }
             }
         }
-        void operator==(mystring&){
+        void operator ==(mystring&){
             cout << name << endl;
         }
 };
 
 int main(){
     string name;
-    cin >> name;
-    mystring s1(name),s2(name);
+    mystring s1,s2;
+  	s1.a();
     !s1;
-    s2 == s1;
+    s1 == s2;
     return 0;
 }

@@ -10,7 +10,7 @@ class Distance{
         feet2 = c;
         inches2 = d;
     }
-  	
+
   	void displayDistance(){
     	;
     }

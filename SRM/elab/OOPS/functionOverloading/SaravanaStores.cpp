@@ -2,7 +2,6 @@
 #include<iostream>
 using namespace std;
 
-
 class Salary{
     public:
         void Increment(int currsal){
