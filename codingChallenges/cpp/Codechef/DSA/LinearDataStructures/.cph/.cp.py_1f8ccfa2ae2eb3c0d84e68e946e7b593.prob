@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: cp","srcPath":"/home/manikanta/ubuntu/codingChallenges/cpp/Codechef/DSA/LinearDataStructures/cp.py","tests":[{"id":1595936600895,"input":"3\n<<>>\n><\n<>>>","output":""}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/codingChallenges/cpp/Codechef/DSA/LinearDataStructures/cp.py"}
