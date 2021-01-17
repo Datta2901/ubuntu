@@ -6,14 +6,14 @@
 
 > Codes : https://www.geeksforgeeks.org/dynamic-programming/
 
-## The problems includes in this directory are 
+## The problems includes in this directory are
 
-> Length of Longest increasing Sunsequence 
+> * Length of Longest increasing Sunsequence 
 
-> length og longest common subsequence
+> * length og longest common subsequence
 
-> Printing longest common subsequence  
+> * Printing longest common subsequence  
 
-> Edit Distance
+> * Edit Distance
 
-> Calculate Binomial coefficient using dp And best approach
+> * Calculate Binomial coefficient using dp And best approach
