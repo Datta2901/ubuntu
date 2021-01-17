@@ -10,7 +10,7 @@
 
 > * Length of Longest increasing Sunsequence 
 >
-> * length og longest common subsequence
+> * length of longest common subsequence
 >
 > * Printing longest common subsequence  
 >
