@@ -2,9 +2,9 @@
 
 * Reference From Geeks For Geeks  
 
-* YouTube PlayList Link = https://youtube.com/playlist?list=PLqM7alHXFySGbXhWx7sBJEwY2DnhDjmxm 
+* YouTube PlayList Link = <https://youtube.com/playlist?list=PLqM7alHXFySGbXhWx7sBJEwY2DnhDjmxm> 
 
-> Codes : https://www.geeksforgeeks.org/dynamic-programming/
+> Codes : <https://www.geeksforgeeks.org/dynamic-programming/>
 
 ## The problems includes in this directory are
 
