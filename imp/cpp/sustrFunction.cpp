@@ -18,3 +18,7 @@ int main()
 
 	return 0; 
 } 
+
+// string Assign function there to assignment one string char or string to other string
+// string append function is there same
+// we can directly assign by stringName += char required same

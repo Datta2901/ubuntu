@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: Bubble","srcPath":"/home/manikanta/ubuntu/imp/cpp/Algorithm/Sorting/Bubble.cpp","tests":[{"id":1598883837327,"input":"5\n2 3 1 4 5","output":""}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/imp/cpp/Algorithm/Sorting/Bubble.cpp"}

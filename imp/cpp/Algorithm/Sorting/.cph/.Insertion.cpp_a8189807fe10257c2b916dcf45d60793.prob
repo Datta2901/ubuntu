@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: Insertion","srcPath":"/home/manikanta/ubuntu/imp/cpp/Algorithm/Sorting/Insertion.cpp","tests":[{"id":1598885236321,"input":"5\n1 2 3 5 4","output":"1 2 3 4 5"}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/imp/cpp/Algorithm/Sorting/Insertion.cpp"}

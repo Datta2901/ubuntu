@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: LinearSearch","srcPath":"/home/manikanta/ubuntu/imp/cpp/Algorithm/Searching/LinearSearch.cpp","tests":[{"id":1598881516120,"input":"2\n1 2\n3","output":""}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/imp/cpp/Algorithm/Searching/LinearSearch.cpp"}

@@ -1,0 +1,1 @@
+(n & (~(n - 1))) //is ues to find the max power of 2 for a given number
