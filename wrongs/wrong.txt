@@ -4,6 +4,13 @@ marchLunch:
 may longChall:
     missing the one constraint zero    
 
+june longChall:
+     due cal error
 
+August & sept : 
+    Not to find logic
 
+October:
+    Due to not taking input in correct 
+    Not able to find the logic 
 

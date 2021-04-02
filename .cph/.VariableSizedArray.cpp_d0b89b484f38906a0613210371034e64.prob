@@ -1,0 +1,1 @@
+{"name":"Local: VariableSizedArray","url":"/home/manikanta/ubuntu/random/VariableSizedArray.cpp","tests":[{"id":1616373121556,"input":"2 2\n3 1 5 4\n5 1 2 8 9 3\n0 1\n1 3","output":"5\n9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/random/VariableSizedArray.cpp","group":"local","local":true}

@@ -1,0 +1,131 @@
+packages-microsoft-prod.deb: Invalid URL :f±Â±JW‚pvV”0ŒB×>ël1¨y´üKMS-z–ã‹ŠVƒ¾…:¶Å,‰x>•¹£?bk€öSñ4bÌH÷ t%0]^eíxE0ÿºß,‚¯ù”­šŸdfTÓD´¤˜[Ïöá%pè×F‚¡’…qo@=µÿ2h:JŞ|î¼¸[¨?jœ\2”ªj2*.f­y>–òP¸¬oW†¶±ï®sãIkBîŠPu-×ƒ?u…A¸?ërÛÂsfC´)íiéfÔb"èg¯éØ~]ã•Œßüd­$Ş»£ú¤ñKÎqÙU4ÆGç.Joo ü~Y·3±uñY§`|p§bªNÂ¤€=Ä&vÃq:®WaRÍÃZ¿2¡Ç³Ê¨DGîĞì¡Ì¸x’âïÃrú‰œ7è‘æ%Ş”‡ıŞM^A<cF02ÉØ”¾ğÍˆZ†·‰<€çŠ:•Okt: Scheme missing
+--2020-07-22 17:43:34--  http://!%3Carch%3E/
+Resolving !<arch> (!<arch>)... failed: Name or service not known.
+wget: unable to resolve host address â€˜!<arch>â€™
+--2020-07-22 17:43:34--  http://debian-binary%20%20%201511824092%20%200%20%20%20%20%200%20%20%20%20%20100644%20%204%20%20%20%20%20%20%20%20%20%60/
+Resolving debian-binary   1511824092  0     0     100644  4         ` (debian-binary   1511824092  0     0     100644  4         `)... failed: Name or service not known.
+wget: unable to resolve host address â€˜debian-binary   1511824092  0     0     100644  4         `â€™
+--2020-07-22 17:43:34--  http://2.0/
+Resolving 2.0 (2.0)... 2.0.0.0
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:43:56--  (try: 2)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:44:19--  (try: 3)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:44:43--  (try: 4)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:45:17--  (try: 5)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:45:43--  (try: 6)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:46:10--  (try: 7)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:46:38--  (try: 8)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:47:07--  (try: 9)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:47:37--  (try:10)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:48:08--  (try:11)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:48:39--  (try:12)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:49:10--  (try:13)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:49:41--  (try:14)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:50:12--  (try:15)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:50:43--  (try:16)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:51:14--  (try:17)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:51:45--  (try:18)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:52:16--  (try:19)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Retrying.
+
+--2020-07-22 17:52:47--  (try:20)  http://2.0/
+Connecting to 2.0 (2.0)|2.0.0.0|:80... failed: Resource temporarily unavailable.
+Giving up.
+
+--2020-07-22 17:53:08--  http://control.tar.gz%20%201511824092%20%200%20%20%20%20%200%20%20%20%20%20100644%20%20764%20%20%20%20%20%20%20%60/
+Resolving control.tar.gz  1511824092  0     0     100644  764       ` (control.tar.gz  1511824092  0     0     100644  764       `)... failed: Name or service not known.
+wget: unable to resolve host address â€˜control.tar.gz  1511824092  0     0     100644  764       `â€™
+--2020-07-22 17:53:08--  http://%1F%8B%08/
+idn_decode failed (9): â€˜Could not convert string in locale encodingâ€™
+Resolving \037\213\b... failed: Name or service not known.
+wget: unable to resolve host address â€˜\037\213\bâ€™
+--2020-07-22 17:53:08--  http://%C2%D1%D6%89%1Ce%96%0D%A5%E3~9%BC%D3$%8E/
+idn_decode failed (9): â€˜Could not convert string in locale encodingâ€™
+Resolving \302\321Ö‰\034e\226\r\245\343~9\274\323$\216... failed: Name or service not known.
+wget: unable to resolve host address â€˜\302\321Ö‰\034e\226\r\245\343~9\274\323$\216â€™
+--2020-07-22 17:53:08--  http://h%03%02%DD9%913%A7y%18%93%FD%B0%17how%D5%83%09%B1a%EE%F4g%EFg%A4%7F%AEz%AB%D5l%97%F9%9F%3E%C8%FF%09%CD%BC%FE%9F%82%93en;%80%15i%8E%7Cem%A4j%0F%80%06%D18!g%9Ao%A5en%17%DA%19%B9%5B%01%F9%CCdk%DD%83%FA/
+idn_decode failed (9): â€˜Could not convert string in locale encodingâ€™
+Resolving h\003\002\3359\2213\247y\030\223\375\260\027howÕƒ\t\261a\356\364g\357g\244\177\256z\253\325l\227\371\237>\310\377\tÍ¼\376\237\202\223en;\200\025i\216|em\244j\017\200\006\3218!g\232o\245en\027\332\031\271[\001\371\314dkİƒ\372... failed: Name or service not known.
+wget: unable to resolve host address â€˜h\003\002\3359\2213\247y\030\223\375\260\027howÕƒ\t\261a\356\364g\357g\244\177\256z\253\325l\227\371\237>\310\377\tÍ¼\376\237\202\223en;\200\025i\216|em\244j\017\200\006\3218!g\232o\245en\027\332\031\271[\001\371\314dkİƒ\372â€™
+Invalid UTF-8 sequence: â€˜\3757zxzâ€™
+--2020-07-22 17:53:08--  http://%FD7zxz/
+idn_decode failed (9): â€˜Could not convert string in locale encodingâ€™
+Resolving \3757zxz... failed: Name or service not known.
+wget: unable to resolve host address â€˜\3757zxzâ€™
+--2020-07-22 17:53:09--  http://e%7F.%C0%20t%92%F2%0F%08%17q%A1e%1Ev%CAb%96u%1E%5Cf%93%B1%9B%F3%B8x%9Eq%BB%7Fy%A8%11%E2%7F%3E%81%F7%B0%AA%97%1F%17%A1%CCny%9A%A4%01%C5%15%07%D1%BEg%E2%1E%0B%98%EC%99%B5%7F%09%DB%AFt%AB%EE%B1&%9Bqg%ECi%FE%0E%16%C5/
+idn_decode failed (9): â€˜Could not convert string in locale encodingâ€™
+Resolving e\177.\300 t\222\362\017\b\027q\241e\036v\312b\226u\036\\f\223\261\233\363\270x\236q\273\177y\250\021\342\177>\201\367\260\252\227\037\027\241\314ny\232\244\001\305\025\aÑ¾g\342\036\v\230ì™µ\177\tÛ¯t\253\356\261&\233qg\354i\376\016\026\305... failed: Name or service not known.
+wget: unable to resolve host address â€˜e\177.\300 t\222\362\017\b\027q\241e\036v\312b\226u\036\\f\223\261\233\363\270x\236q\273\177y\250\021\342\177>\201\367\260\252\227\037\027\241\314ny\232\244\001\305\025\aÑ¾g\342\036\v\230ì™µ\177\tÛ¯t\253\356\261&\233qg\354i\376\016\026\305â€™
+--2020-07-22 17:53:09--  ftp://%EF%0E%CC%179e&%87%8B%11@n%F0%08y%B8%16%FF%96%97%22%D2%CA%FD%AC+%C2co%97%0F%08b%BE%C81%7F%0D%B5/;3ñ]P»0™iˆÌfßÕ¡õVÙ]ÔgxÑ„Ìš0V$x;ë¦6q8ü©hø[{ ÏsBÏ•çú/>O'@éö_”x]J Ì×ìº8×ó;®(ÙAë,uInİÃÁyÁÑøõOù>gÜö[	]Dˆ=ÿŸs{}uKªg­=­2¨ÎBGu½yÀh½õ¾±Ò n	ªA|–¿Éè\ssÓólB7~Bs·3İz+ÃM\42
+           => â€˜.listingâ€™
+idn_decode failed (9): â€˜Could not convert string in locale encodingâ€™
+Resolving n\360\by\270\026\377\226\227"\322\312\375\254+\302co\227\017\bb\276\3101\177\r\265... failed: Name or service not known.
+wget: unable to resolve host address â€˜n\360\by\270\026\377\226\227"\322\312\375\254+\302co\227\017\bb\276\3101\177\r\265â€™
+--2020-07-22 17:53:09--  http://%BC7%BD%89%E9%FB%BF%88%05%A1%92%CD%FBwn%D0%BA%95%96a%8A%E7%F2j%CF%1D%C4%05w%0E%A0l%EB9%EEh%16%DB%E4%F6%C0%A4%0F%7Df%15%C7%F8%12%FC%A6b2%1E&%D3%E0%E0%A7%AC$%91%99%C5%60%E1%1D1%91%B4g)g%07%CD%A5/
+idn_decode failed (9): â€˜Could not convert string in locale encodingâ€™
+Resolving \2747\275\211\351\373\277\210\005\241\222\315\373wnĞº\225\226a\212\347\362j\317\035\304\005w\016\240l\3539\356h\026\333\344\366\300\244\017}f\025\307\370\022\374\246b2\036&\323\340à§¬$\221\231\305`\341\0351\221\264g)g\aÍ¥... failed: Name or service not known.
+wget: unable to resolve host address â€˜\2747\275\211\351\373\277\210\005\241\222\315\373wnĞº\225\226a\212\347\362j\317\035\304\005w\016\240l\3539\356h\026\333\344\366\300\244\017}f\025\307\370\022\374\246b2\036&\323\340à§¬$\221\231\305`\341\0351\221\264g)g\aÍ¥â€™
+idn_encode failed (3): â€˜Non-digit/letter/hyphen in inputâ€™
+--2020-07-22 17:53:09--  http://%3E%5C/?F%0C%E4w%D1%19%F8%96%B7%BC%07%7C%D8%15%BC%F7%9A%9C%B1%DE%9C%1CL%EB%C6%93x%B2t%A5%0DoX%EC%D7%9C%96%D1%05n%F7%DE%196[x%9Cc6%CD%0F%85%9AH%CB%14%B19%CCs%13&%C9%A1%9B%15%A5T%F2%A8.D%14N*%CF%D7%C2%CE%85%E1%D4%1F%D9%8D%83%25%953%B9%E0%F3x%20%0F%04j%E4%C1]%D5DB%F4p%C2%94M%F03%99%924%E2%CF=%7B%D8%C0%BCMP%CE%7B%03%C4g%0C%D7%D6%8DO%7FN%9F%F1%B1%84%94%5Ca%BBc%EF/%25g%22%99$%85n;%17%D1&%F3%E2%DE%EFGH%DC%EC%12%D6%C2%9E%0E%3CP%E6%07%CA%AF%D6%C7g
+Resolving >\\ (>\\)... failed: Name or service not known.
+wget: unable to resolve host address â€˜>\\â€™
+--2020-07-22 17:53:09--  http://%3E%5C/?F%0C%E4w%D1%19%F8%96%B7%BC%07%7C%D8%15%BC%F7%9A%9C%B1%DE%9C%1CL%EB%C6%93x%B2t%A5%0DoX%EC%D7%9C%96%D1%05n%F7%DE%196[x%9Cc6%CD%0F%85%9AH%CB%14%B19%CCs%13&%C9%A1%9B%15%A5T%F2%A8.D%14N*%CF%D7%C2%CE%85%E1%D4%1F%D9%8D%83%25%953%B9%E0%F3x%20%0F%04j%E4%C1]%D5DB%F4p%C2%94M%F03%99%924%E2%CF=%7B%D8%C0%BCMP%CE%7B%03%C4g%0C%D7%D6%8DO%7FN%9F%F1%B1%84%94%5Ca%BBc%EF/%25g%22%99$%85n;%17%D1&%F3%E2%DE%EFGH%DC%EC%12%D6%C2%9E%0E%3CP%E6%07%CA%AF%D6%C7g
+Resolving >\\ (>\\)... failed: Name or service not known.
+wget: unable to resolve host address â€˜>\\â€™
+FINISHED --2020-07-22 17:53:09--
+Total wall clock time: 9m 36s
+Downloaded: 1 files, 2.4K in 0s (123 MB/s)
