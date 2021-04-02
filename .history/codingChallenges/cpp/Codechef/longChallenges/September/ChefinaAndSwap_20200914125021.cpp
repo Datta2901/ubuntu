@@ -1,0 +1,91 @@
+#include<bits/stdc++.h>
+#include<vector>
+#include<iostream>
+#include<cmath>
+#include<algorithm>
+#include<iterator>
+#include<string>
+#include<map>
+#define vv vector
+#define F first
+#define S second
+#define MP make_pair
+#define EXECUTE_FASTER ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define printMap(map,name,dataStr,data) for(map<dataStr,data>:: iterator it = name.begin(); it != name.end(); it++){ cout << it->first << " " << it->second << endl;}
+#define printVector(vect,dataStruct) for(vector<dataStruct> :: iterator it = vect.begin(); it !=vect.end();it++){cout << *it << " ";}
+#define printVectorofPairs(name,dataStr) for(vector<pair<dataStr,dataStr> >:: iterator it = name.begin(); it != name.end(); it++){ cout << it->first << " " << it->second << endl;}
+#define printMapOfVector(name,dataStr) for(map<dataStr ,vector<dataStr> > :: iterator it = name.begin(); it != name.end(); it++){cout << it->first << "  : ";for(auto ip = it->second.begin() ; ip != it->second.end(); ip++){  cout << *ip << " ";}cout << endl;}
+#define MOD 1000000007
+#define ll long long int 
+#define l long int
+#define loop(n)for(int i = 0; i < n; i++)
+#define rep(e,var) for(int var = 0; var < e; var++)
+#define repeat(n,a) for(int i=a;i<n;i++)
+#define vec(datStruct) vector<datStruct>
+#define inc_sort(v) sort(v.begin(),v.end());
+#define pb push_back
+#define endl '\n'
+using namespace std;
+#define vectorInput(vect,n)for(int i=0;i<n;i++){ int a; cin >> a; vect.pb(a);}
+#define testcase() int t; cin >> t; while(t--)
+
+typedef pair<int,int> ele;
+typedef vector< vector<int> > matrix;
+typedef pair<ele,ele> box;
+typedef map<box,int> boxSum ;
+int main(){
+   EXECUTE_FASTER
+   testcase(){
+      int k, n;
+      cin >> k;
+      testcase(){
+         cin >> n;
+         vector<int> number (n);
+         for(int i = 0; i < n; i++)
+         int sum = (n*(n + 1)) / 2;
+         if(sum % 2 == 0){
+            cout << 0 << endl;
+
+         }else{
+            cout << 1 << endl;
+
+         }
+      }
+   return 0;
+}
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Partition the set S into two subsets S1, S2 such that the
+// difference between the sum of elements in S1 and the sum
+// of elements in S2 is minimized
+int minPartition(int S[], int n, int S1, int S2)
+{
+	// base case: if list becomes empty, return the absolute
+	// difference between two sets
+	if (n < 0)
+		return abs(S1 - S2);
+
+	// Case 1. include current item in the subset S1 and recur
+	// for remaining items (n - 1)
+	int inc = minPartition(S, n - 1, S1 + S[n], S2);
+
+	// Case 2. exclude current item from subset S1 and recur for
+	// remaining items (n - 1)
+	int exc = minPartition(S, n - 1, S1, S2 + S[n]);
+
+	return min (inc, exc);
+}
+
+int main()
+{
+	int S[] = { 10, 20, 15, 5, 25};
+
+	int n = sizeof(S) / sizeof(S[0]);
+
+	cout << "The minimum difference is " << minPartition(S, n - 1, 0, 0);
+
+	return 0;
+}

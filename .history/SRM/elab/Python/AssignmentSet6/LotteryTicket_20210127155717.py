@@ -1,0 +1,1 @@
+TicketNumber0  =  int(input("Enter Your lottery ticket number"))

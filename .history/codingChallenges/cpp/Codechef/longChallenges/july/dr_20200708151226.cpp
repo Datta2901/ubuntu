@@ -1,0 +1,102 @@
+#include<bits/stdc++.h>
+#include<vector>
+#include<iostream>
+#include<cmath>
+#include<algorithm>
+#include<iterator>
+#include<string>
+#include<map>
+#include<unordered_map>
+#define F first
+#define S second
+#define MP make_pair
+#define EXECUTE_FASTER ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define printVect(vect,dataStruct) for(vector<dataStruct> :: iterator it = vect.begin(); it !=vect.end();it++){cout << *it << " ";}cout << endl;
+#define MOD 1000000007
+#define ll long long int 
+#define loop(n) for(int i= 0;i< n;i++)
+#define rep(e,var) for(int var = 0; var < e; var++)
+#define repeat(n,a) for(int i=a;i<n;i++)
+#define vec(datStruct) vector<datStruct>
+#define inc_sort(v) sort(v.begin(),v.end());
+#define pb push_back
+#define endl '\n'
+using namespace std;
+#define vectInput(vect,n) for(int i=0;i<n;i++){ int a; cin >> a; vect.pb(a);}
+#define testcase() int t; cin >> t; while(t--)
+
+
+long int daystofill(long int maxnum, long int num){
+    long int count =0 ;
+    while(num < maxnum) {
+        count ++;
+        num *= 2;
+    }
+
+    return count;
+}
+
+long int RequiredDays(vector<long int> infected,long int cures,int nearer){
+  long int extraDays = 0,cityInfCount,vaccineCount;
+  for(int i = nearer; i < infected.size();){
+    //   if(cures >= infected[i]){
+    //       cures = 2 * infected[i];
+    //     //   cout << cures << " " ;
+    //       i++;
+    //   }else{
+    //       cures *= 2;
+    //       extraDays++; 
+    //   }
+    cityInfCount = daystofill(infected[infected.size() - 1], infected[i]);
+    vaccineCount = daystofill(infected[infected.size() - 1], cures);
+    if (1+ vaccineCount < cityInfCount){
+        cures *= 2;
+        extraDays++;
+    } else{
+        cures = infected[i]*2;
+        i = i+1;
+    }
+  }
+    return extraDays;
+}
+int main(){
+    EXECUTE_FASTER
+    testcase(){
+        int size;
+        long long int cures;
+        cin >> size >> cures;
+        vector<long int > infected;
+        loop(size){
+            long int a;
+            cin >> a;
+            infected.pb(a);
+        }
+        sort(infected.begin(),infected.end());
+        // printVect(infected,long int);
+        vector<long int > :: iterator it = lower_bound(infected.begin(),infected.end(),cures);
+        // cout <<" lower_bound "<< (it-infected.begin()) << " value is " << *it  << endl;
+        long int days;
+        days = RequiredDays(infected,cures,(it- infected.begin()));
+        cout << size + days << endl;
+       
+    }
+    return 0;
+}
+
+// 1 
+// 4 20
+// 1 10 11 41
+// 6f
+// ca:5
+
+// 1 
+// 6 9 
+// 5 10 125 335 980 1000
+// 12
+// 11 ca
+
+// 1
+// 9 7
+// 2 4 5 6 8 24 26 31 92
+// 12
+// ca 11

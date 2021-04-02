@@ -1,0 +1,134 @@
+#include<bits/stdc++.h>
+#include<vector>
+#include<iostream>
+#include<cmath>
+#include<algorithm>
+#include<iterator>
+#include<string>
+#include<map>
+#define vv vector
+#define F first
+#define S second
+#define MP make_pair
+#define EXECUTE_FASTER ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define printMap(map,name,dataStr,data) for(map<dataStr,data>:: iterator it = name.begin(); it != name.end(); it++){ cout << it->first << " " << it->second << endl;}
+#define printVector(vect,dataStruct) for(vector<dataStruct> :: iterator it = vect.begin(); it !=vect.end();it++){cout << *it << " ";}
+#define printVectorofPairs(name,dataStr) for(vector<pair<dataStr,dataStr> >:: iterator it = name.begin(); it != name.end(); it++){ cout << it->first << " " << it->second << endl;}
+#define printMapOfVector(name,dataStr) for(map<dataStr ,vector<dataStr> > :: iterator it = name.begin(); it != name.end(); it++){cout << it->first << "  : ";for(vector<vector<int>>::iterator ip = it->second.begin() ; ip != it->second.end(); ip++){  cout << *ip << " ";}cout << endl;}
+#define MOD 1000000007
+#define trav(a,b) for(auto a : b)
+#define ll long long int 
+#define l long int
+#define loop(n)for(int i = 0; i < n; i++)
+#define rep(e,var) for(int var = 0; var < e; var++)
+#define repeat(n,a) for(int i=a;i<n;i++)
+#define vec(datStruct) vector<datStruct>
+#define inc_sort(v) sort(v.begin(),v.end());
+#define pb push_back
+#define endl '\n'
+using namespace std;
+#define vectorInput(vect,n)for(int i=0;i<n;i++){ int a; cin >> a; vect.pb(a);}
+#define testcase() int t; cin >> t; while(t--)
+
+typedef pair<int,int> ele;
+typedef vector< vector<int> > matrix;
+typedef pair<ele,ele> box;
+typedef map<box,int> boxSum ;
+
+long int SubTask1(int n, int size){
+    long int pos = 0,neg = 0;
+    for(int i = 0; i < size; i++){
+        long int a;
+        cin >> a;
+        if(a > 0){
+            pos += 1;
+        }else{
+            neg += 1;
+        }
+    }
+    return pos * neg;
+}
+long long int SubTask2(int n){
+    vector<vector<int>> positions(n);
+    map<int,int> collisions;
+    long long int answer = 0;
+    for(int i = 0; i < n; i++){
+        int size;
+        cin >> size;
+        for(int j = 0; j < size; j++){
+            int a;
+            cin >> a;
+            positions[i].pb(a);
+            collisions[abs(a)]++;
+        }
+    }
+
+    // collisions at O
+    trav(it,collisions){
+        answer += (it.second > 1);
+    }
+    // collisions on line
+    trav(it,positions){
+        vector<int>pos,neg; // store distances at respective sides
+        trav(ant,it){
+            if(ant > 0){
+                pos.insert(pos.begin(),ant);
+            }if(ant < 0){
+                neg.pb(ant);
+            }
+        }
+        while(true){
+            int nearestAnt;// taking the closest ant nearrer to origin
+            if(pos.empty()){
+                nearestAnt = neg.back();
+            }if(neg.empty()){
+                nearestAnt = pos.back();
+            }if(pos.empty() && neg.empty()){
+                break;
+            }else{
+                nearestAnt = (abs(neg.back()) > pos.back()) ? pos.back(): neg.back();
+            }
+            if(nearestAnt > 0){// it closest is positive side
+                if(collisions[nearestAnt] > 1){// if it collides at origin and get back to the pos side 
+                    answer += pos.size() - 1;// -1 since we already counted the collisions at origin
+                }else{//and it  wont collide at origin continues to moves so go to negative side
+                    answer += neg.size();
+                }
+            }else{
+                if(collisions[nearestAnt] > 1){
+                    answer += neg.size() - 1;
+                }else{
+                    answer += pos.size();
+                }
+            }
+            if(nearestAnt < 0){
+                neg.pop_back();
+            }else{
+                pos.pop_back();
+            }
+        }
+    }
+    return answer;
+}
+
+int main(){
+      EXECUTE_FASTER
+      testcase(){
+        long int n;int size;
+        cin >> n;
+        if(n == 1){
+            //subtask 1
+            cin >> size;
+            long int answer = SubTask1(n,size);
+            cout << answer << endl; 
+            continue;
+        }
+        // subtask 2;
+        if(n > 1){
+            long long int answer;
+            answer = SubTask2(n);
+            cout << answer << endl;
+        } 
+    }
+   return 0;
+}

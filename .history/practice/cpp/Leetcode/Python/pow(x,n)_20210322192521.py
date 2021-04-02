@@ -1,0 +1,1 @@
+ def groupAnagrams(self, strs: List[str])

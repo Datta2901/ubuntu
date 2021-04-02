@@ -1,0 +1,1 @@
+numbers = input(files=None, inplace=False, backup='', bufsize=0, mode='r', openhook=None)

@@ -1,0 +1,5 @@
+numbers = input("Enter the list of tuples ")
+required = numbers.partition('(')
+answer = required.partition(')')
+print(re)
+print(required[0])

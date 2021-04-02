@@ -1,0 +1,1 @@
+2. You are given a list of tuples with each tuple having three elements of the format (a,b,c) where a,b and c are positive integers. Create a lambda function that takes three arguments a, b and c and returns the output (a+b)2 + c.  Use this lambda function on the list of tuples with the Python built in map function to generate a new list of answers of lambda expression.

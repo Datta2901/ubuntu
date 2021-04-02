@@ -1,0 +1,132 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define testcase() int t; cin >> t; while(t--)
+int main(){
+    testcase(){
+        int size;
+        cin >> size;
+        vector<int> velocity,arr;
+        velocity.push_back(0);
+        for(int i = 1; i  <= size; i++){
+            int a;
+            cin >> a;
+            velocity.push_back(a);
+            arr.push_back(a);
+        }
+        if(size == 3){
+            map<pair<int,int>,float>time;
+            map<int,set<int>> athelet;
+            vector<int>infected;
+            int count;
+            for(int j = 1; j <= size; j++){
+                count = 0; 
+                for(int k = 1; k <= size; k++){
+                    if(k == j){
+                        athelet[k].insert(j);
+                        athelet[j].insert(k);
+                        count++;
+                    }else{
+                        if(velocity[k] - velocity[j] != 0){
+                            float answer = ((float)((j - k)) / (velocity[k] - velocity[j]));
+                            if(answer >= 0){
+                                time[{j,k}] = answer;
+                                time[{k,j}] = answer;
+                                athelet[k].insert(j);
+                                athelet[j].insert(k);
+                                count++;
+                            }
+                        }
+                    }
+                }
+                infected.push_back(count);
+            }
+
+            for(auto it = athelet.begin(); it != athelet.end(); it++){
+                for(auto ip = it->second.begin(); ip != (it->second).end(); ip++){
+                    for(auto itr = athelet[*ip].begin(); itr != athelet[*ip].end(); itr++){
+                        if(time[{it->first,*ip}] < time[{*ip,*itr}] && time[{*ip,*itr}] != 0){
+                            athelet[it->first].insert(*itr);
+                            athelet[*itr].insert(it->first);
+                        }
+                    }
+                }
+            }
+
+                //  for(auto it = athelet.begin(); it != athelet.end(); it++){
+                //     cout << it->first << " --------------> ";
+                //         for(auto ip = (it->second).begin(); ip != (it->second).end(); ip++){
+                //             cout << *ip << " ";
+                //         }
+                //     cout << endl;
+                // }
+
+            for(auto it = athelet.begin(); it != athelet.end(); it++){
+                infected.push_back((it->second).size());
+            }
+
+            int min = INT_MAX,max = INT_MIN;
+            for(int i = 0; i < infected.size(); i++){
+                    if(min > infected[i]){
+                        min = infected[i];
+                    }if(max < infected[i]){
+                        max = infected[i];
+                    }
+                }
+            cout << min << " " << max << endl;
+        }if(size > 3){
+            int res =  arr.size();
+            vector<int>infected(res);
+            vector<int> dist(res);
+            int minimum=INT_MAX, maximum= INT_MIN;
+            for(int i=0; i< res; i++){
+                for(int j = 0; j < res; j++){
+                    infected[j] = 0;
+                }
+                infected[i] = 1;
+                for(int i = 0; i < dist.size(); i++){
+                    dist[i] = i;
+                }
+                int loop=100;
+                while(loop--){
+                    for(int j = 0;j < res; j++){
+                        dist[j] += arr[j];
+                    }
+                    unordered_set<int>toKnow(res);
+                    vector<int> toI(res);
+                    for(int i = 0; i < infected.size(); i++){
+                        auto x = infected[i];
+                        if ( x == 1){
+                            toI.push_back(i);
+                        }
+                    }
+                    
+                    for(auto x : toI){
+                        toKnow.insert(dist[x]);
+                    }
+                    for(int j = 0; j < res; j++){
+                        if(infected[j]){
+                            continue;
+                        }
+                        if(toKnow.count(dist[j])){
+                            infected[j] = 1;
+                        }
+                    }
+                    toKnow.clear();
+                }
+                int count = 0;
+                for(auto x :infected){
+                    if(x == 1){
+                        count++;
+                    }
+                }
+                if(minimum > count){
+                    minimum = count;
+                }if(maximum < count){
+                    maximum = count;
+                }
+        }
+            cout<<  minimum <<" " << maximum << endl;
+        }
+    }
+    return 0;
+}

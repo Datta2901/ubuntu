@@ -1,0 +1,6 @@
+Basic :
+Problem -> Flowchart/Algorithm/ pseudocode -> Program -> solution
+
+Algorithm :
+    A collection of unambiguous instructions 
+    

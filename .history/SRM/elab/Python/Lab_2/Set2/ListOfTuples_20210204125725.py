@@ -1,0 +1,1 @@
+numbers = input("Enter the list of tup;")
