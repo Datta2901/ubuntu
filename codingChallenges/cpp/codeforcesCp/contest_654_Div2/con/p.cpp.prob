@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: p","srcPath":"/home/manikanta/ubuntu/codingChallenges/cpp/codeforcesCp/con/p.cpp","tests":[{"id":1593619992158,"input":"4\n1\n2\n3\n4\n","output":"1\n1\n2\n2"}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/codingChallenges/cpp/codeforcesCp/con/p.cpp"}

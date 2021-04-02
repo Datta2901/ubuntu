@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: ChefVsDoof","srcPath":"/home/manikanta/ubuntu/codingChallenges/cpp/randomCha/codersLegacy/ChefVsDoof.cpp","tests":[{"id":1594903797924,"input":"2\n5\n1 2 5 4 3\n1\n7","output":"NO\nYES"}],"timeLimit":3000,"url":"/home/manikanta/ubuntu/codingChallenges/cpp/randomCha/codersLegacy/ChefVsDoof.cpp"}
