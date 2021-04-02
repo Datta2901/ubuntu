@@ -16,6 +16,6 @@ int main(){
         sum += a;
     }
     int a = maxSum(arr,sum,0);
-    cout << a << endl;
+    cout << sum/size << endl;
     return 0;
 }

@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+
 struct Node
 {
   int data;
@@ -15,11 +16,8 @@ void printList(struct Node *a){
     cout << endl;
 }
 
-
-int main(){
-    struct Node *head = NULL,*temp;//temp is used to store the address of the present node//head is used to store the address of the first node
-    int size;
-    cin >> size;
+Node* GetInput(int size){
+    struct Node *temp,*head = NULL;
     for(int i = 0; i < size; i++){
         struct Node *new_node = (struct Node*)malloc(sizeof(struct Node));
         int data;
@@ -27,13 +25,22 @@ int main(){
         new_node->data = data;
         if(head == NULL){
             head = new_node;
-            temp = head;    //to store 1st node adress in temp
+            temp = head;   
         }else{
             temp->next = new_node;
             temp = new_node;
         }
     }
     temp->next = NULL;
-    temp = head;
+    return head;
+}
+
+int main(){
+    struct Node *head = NULL;
+    int size;
+    cin >> size;
+    head = GetInput(size);
     printList(head);
+    
+    return 0;
 }
