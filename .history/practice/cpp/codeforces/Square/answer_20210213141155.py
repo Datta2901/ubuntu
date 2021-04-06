@@ -1,0 +1,2 @@
+def strange(j):
+    k

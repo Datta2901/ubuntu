@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+// taking input 
+struct input{
+    char FirstName[30],LastName[30];    
+    int Age,Year;
+};
+
+
+struct qu
+
+int main(){
+    while(!cin.eof()){
+        struct input taken;
+        cin >> taken.FirstName >> taken.LastName >> taken.Age >> taken.Year;
+        cout << taken.Year << endl;
+    }
+    return 0;
+}

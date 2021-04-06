@@ -1,0 +1,5 @@
+Basic :
+Problem -> Flowchart/Algorithm/ pseudocode -> Program -> solution
+
+Algorithm :
+    A co

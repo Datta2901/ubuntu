@@ -1,0 +1,21 @@
+
+ //more on how many steps need to convert one string to other
+ // practice on recursive problems
+    
+    Regex - regular expression
+
+    Question Paper Pattern for CT2
+
+10 MCQ (10*1=10) 
+8 Scenario Based Questions (8*5=40) 
+Total = 50 marks
+
+Student Should follow While answering Scenario Based Question:
+
+1.  They have to write and upload
+
+2. Indentation should be followed
+
+3. Variable Name Convention should be followed along with the variable name should be end with last three digits of Register Number
+
+4. Comments// .TODO - Codechef problem,codeforces problem,leetcode,Geeks for Geeks

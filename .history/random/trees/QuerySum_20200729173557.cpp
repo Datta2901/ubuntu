@@ -1,0 +1,89 @@
+// https://cp-algorithms.com/data_structures/segment_tree.html#toc-tgt-0/
+// Segment tree 
+// Given array find the sum between given range l and r
+// when queries are large then segment tree can be used
+#include<iostream>
+using namespace std;
+#define m 10
+int tree[4 * m];            // maximum size of the segment tree is 4 * size of given  array
+
+// building of segment tree in O(n) 
+// building the the tree 
+void build(int a[],int index,int low,int high){
+
+    if(low == high){        
+        tree[index] = a[low];       
+    }else{
+        int mid = (low + high)/2;
+        build(a,2 *index,low,mid);                              //filling left child
+        build(a,2 * index + 1,mid + 1,high);                    //filling right child
+        tree[index] = tree[2 * index] + tree[2 *index + 1]; 
+    }  
+}
+
+// can be calculated in log(n)
+int sum(int index,int low,int high,int l,int r){
+    if(l > r){              // not in the given range 
+        return 0;
+    }
+    if(l == low && r == high){      // completely lies in the given range
+        return tree[index];    
+    }
+    int mid = (low + high) / 2;
+    return sum(2 * index,low,mid,l,min(mid,r)) + sum(2 * index + 1,mid + 1,high,max(mid + 1,l),r); 
+}
+
+void update(int v,int tl,int tr,int pos,int new_val){
+    if(tl == tr){
+        tree[v] = new_val;
+    }else{
+        int tm = (tl + tr) / 2;
+        if(pos <= tm){
+            update(2 * v,tl,tm,pos,new_val);
+        }else{
+            update(2 * v + 1,tm + 1,tr,pos,new_val);
+        }
+        tree[v] = tree[2 * v] + tree[2 * v + 1];
+    }    
+}
+
+
+int main(){
+    cout << "Enter the size \n";
+    int n;
+    cin >> n;
+    int arr[n + 1];
+    arr[0]=0;
+    cout << "Enter the elements of the array\n";
+    for(int i = 1; i <= n; i++){
+        cin >> arr[i];
+    }
+    build(arr,1,1,n);
+
+    cout << "Segment tree is ";
+    for(int i = 1; i < 4 * n; i++){
+        cout << tree[i] << " " ;
+    }
+    cout << endl;
+    cout << "Enter the number of queries \n";
+    int q;
+    cin >> q;
+    while(q--){
+        int l ,r;
+        cout << "Enter the range " << endl;
+        cin >> l >> r;
+        cout << "Sum from " <<  l  << " to " << r << " is ";
+        cout << sum(1,1,n,l,r) << endl;
+        cout << "Enter the postion and value of the element want to be updated " << endl;
+        int pos,value;
+        cin >> pos >> value;
+        update(1,1,n,pos,value);
+        cout << "Segment tree updated with " << pos << " and "is ";
+        for(int i = 1; i < 4 * n; i++){
+            cout << tree[i] << " " ;
+        }
+        cout << endl;
+    }
+    return 0;
+}
+// video :  https://www.youtube.com/watch?v=-dUiRtJ8ot0

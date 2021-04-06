@@ -1,0 +1,11 @@
+Write a program to find the sum of  ‘n’ positive numbers
+Write a program to find the second maximum of the given array of numbers
+Write a program to find the given number belongs to Fibonacci series or not
+List various programming paradigms that exists.
+Write a program to check whether the number is  Armstrong number or not(sum of cubes of digits  = number)
+# electricity unit - input and calculate the total electricity bill according to the given condition:
+# For first 50 units Rs. 0.50/unit
+# For next 100 units Rs. 0.75/unit
+# For next 100 units Rs. 1.20/unit
+# For unit above 250 Rs. 1.50/unit
+# An additional surcharge of 20% is added to the bill.

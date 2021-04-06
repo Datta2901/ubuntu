@@ -1,0 +1,1 @@
+UserChoice0033 = int(input("Enter a number : 0 for scissor, 1 for scissor "))

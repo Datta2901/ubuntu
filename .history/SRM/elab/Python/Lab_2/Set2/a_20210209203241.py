@@ -1,0 +1,2 @@
+numbers = input()
+numbers.spl

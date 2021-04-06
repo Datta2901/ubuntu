@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int EditDist(string a ,string b){
+    retur
+}
+
+
+int main(){
+    string a,b;
+    cin >> a >> b;
+
+}

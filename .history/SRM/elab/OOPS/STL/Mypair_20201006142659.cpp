@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+
+int main(){
+    pair<int,string> mypair;
+    int a;
+    string b;
+    
+
+    return 0;
+}

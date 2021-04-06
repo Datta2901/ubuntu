@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+
+class AddData{
+    public:
+        void accept_
+}
+
+int main(){
+
+    return 0;
+}
