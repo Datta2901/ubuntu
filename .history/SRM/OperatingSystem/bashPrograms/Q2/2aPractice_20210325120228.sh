@@ -1,1 +1,0 @@
-echo Enter a number

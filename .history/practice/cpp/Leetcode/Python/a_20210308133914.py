@@ -1,1 +1,0 @@
-hof = lamda x

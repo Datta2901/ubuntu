@@ -1,2 +1,0 @@
-Basi
-Problem -> Flowchart/Algorithm/ pseudocode -> Program -> solution

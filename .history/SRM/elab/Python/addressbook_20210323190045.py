@@ -1,3 +1,0 @@
-from tkinterimport tkinter *
-
-

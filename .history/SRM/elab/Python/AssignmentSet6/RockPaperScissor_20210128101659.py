@@ -1,1 +1,0 @@
-UserChoice0033 = int(input("Enter a nu 0 for scissor, "))

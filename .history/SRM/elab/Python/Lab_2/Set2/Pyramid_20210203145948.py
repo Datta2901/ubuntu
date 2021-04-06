@@ -1,1 +1,0 @@
-number0033 = int(input("Ente"))

@@ -1,2 +1,0 @@
-def strange(j):
-    k

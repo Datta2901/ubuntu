@@ -1,2 +1,0 @@
-
-TODO- \\wsl$\Ubuntu-16.04\home\manikanta\ubuntu

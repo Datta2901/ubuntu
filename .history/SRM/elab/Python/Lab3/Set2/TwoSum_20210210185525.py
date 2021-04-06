@@ -1,1 +1,0 @@
-size = input("En")

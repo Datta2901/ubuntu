@@ -1,1 +1,0 @@
-TicketNumber  =  int(input("Enter "))

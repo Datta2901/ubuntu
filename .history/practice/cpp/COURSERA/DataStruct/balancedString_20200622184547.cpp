@@ -1,2 +1,0 @@
-// stack example
-#include<

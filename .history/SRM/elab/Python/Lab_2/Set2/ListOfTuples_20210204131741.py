@@ -1,6 +1,0 @@
-numbers = input("Enter the list of tuples ")
-numbers.partition('(')
-print(numbers)
-print(numbers[0])
-print(numbers[1])
-print(numbers[2])
