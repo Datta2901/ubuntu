@@ -1,0 +1,1 @@
+{"name":"Local: GCDSum","url":"/home/manikanta/ubuntu/practice/cpp/codeforces/GCDSum.cpp","tests":[{"id":1617698989993,"input":"3\n11\n31\n75","output":"12\n33\n75\n"},{"id":1617699549423,"input":"1\n2","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/practice/cpp/codeforces/GCDSum.cpp","group":"local","local":true}
