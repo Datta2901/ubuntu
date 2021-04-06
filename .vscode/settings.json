@@ -4,6 +4,8 @@
     "bracket-pair-colorizer-2.showBracketsInRuler": true,
     "git.ignoreLimitWarning": true,
     "files.associations": {
-        "random": "cpp"
+        "random": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp"
     }
 }
