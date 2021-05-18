@@ -6,6 +6,26 @@
     "files.associations": {
         "random": "cpp",
         "cmath": "cpp",
-        "complex": "cpp"
-    }
+        "complex": "cpp",
+        "iostream": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "regex": "cpp",
+        "valarray": "cpp",
+        "bitset": "cpp",
+        "utility": "cpp",
+        "iosfwd": "cpp",
+        "type_traits": "cpp",
+        "ostream": "cpp"
+    },
+    "cph.language.cpp.Args": "-std=c++14 -g",
+    "cph.general.autoShowJudge": false
 }

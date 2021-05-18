@@ -41,13 +41,13 @@ typedef vector<ll> vi;
 //debug
 #define deb(...) ZZ(#__VA_ARGS__, __VA_ARGS__)
 
-template <typename Arg1> void ZZ(const char* name, Arg1&& arg1){std::cerr << name << " = " << arg1 << endl;}
-template <typename Arg1, typename... Args>void ZZ(const char* names, Arg1&& arg1, Args&&... args)
-{
-	const char* comma = strchr(names + 1, ',');
-	std::cerr.write(names, comma - names) << " = " << arg1;
-	ZZ(comma , args...);
-}
+// template <typename Arg1> void ZZ(const char* name, Arg1&& arg1){std::cerr << name << " = " << arg1 << endl;}
+// template <typename Arg1, typename... Args>void ZZ(const char* names, Arg1&& arg1, Args&&... args)
+// {
+// 	const char* comma = strchr(names + 1, ',');
+// 	std::cerr.write(names, comma - names) << " = " << arg1;
+// 	ZZ(comma , args...);
+// }
 
 // constants
 const int mod = 1e9 + 7;
