@@ -1,28 +1,49 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-bool isSubsetSum(int set[], int n, int sum){
-	if (sum == 0)
-		return true;
-	if (n == 0)
-		return false;
-
-	if (set[n - 1] > sum)
-		return isSubsetSum(set, n - 1, sum);
-
-	return isSubsetSum(set, n - 1, sum) || isSubsetSum(set, n - 1, sum - set[n - 1]);
-}
-
-int main(){
-    int size,b,c,d;
-    vector<int>bb,cc,dd;
-    for(int i = 0; i < size; i++){
-        int e,f,g;
-        cin >> e >> f >> g;
-        bb.push_back(e);
-        cc.push_back(f);
-        dd.push_back(g);
+int main()
+{
+    int nv,nc,nf,np,n,i,j,nvc,ncc,nfc,npc;
+    int t1,t2,t3,t4;
+ 
+    cin>>nv>>nc>>nf>>np;
+    cin>>n;
+ 
+    vector<int>arr[n];
+ 
+    for(i=0;i<n;++i)
+    {
+        cin>>t1>>t2>>t3>>t4;
+        arr[i].push_back(t1);
+        arr[i].push_back(t2);
+        arr[i].push_back(t3);
+        arr[i].push_back(t4);
+         
     }
-
-	return 0;
+    int ans=0;
+    for(i=1;i<(1<<n);++i)
+    {
+        nvc=0;ncc=0;nfc=0;npc=0;
+        for(j=0;j<n;++j)
+        {
+            if(i & (1<<j))
+            {
+                nvc+=arr[j][0];ncc+=arr[j][1];nfc+=arr[j][2];npc+=arr[j][3];
+                
+            }
+            
+        }
+        if(nvc==nv && ncc==nc && nfc==nf && npc==np)
+        {
+            ans=1;
+            break;
+ 
+        }
+ 
+    }
+ 
+    if(ans==1)
+        cout<<"YES"<<"\n";
+    else
+        cout<<"NO"<<"\n";
+    return 0;
 }
