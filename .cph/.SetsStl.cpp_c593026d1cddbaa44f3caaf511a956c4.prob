@@ -1,0 +1,1 @@
+{"name":"Local: SetsStl","url":"/home/manikanta/ubuntu/practice/cpp/Hackerrank/Cpp/SetsStl.cpp","tests":[{"id":1622041053753,"input":"8\n1 9\n1 6\n1 10\n1 4\n3 6\n3 14\n2 6\n3 6","output":"Yes\nNo\nNo"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/practice/cpp/Hackerrank/Cpp/SetsStl.cpp","group":"local","local":true}

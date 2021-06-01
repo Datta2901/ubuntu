@@ -1,0 +1,1 @@
+{"name":"Local: OverloadOperators","url":"/home/manikanta/ubuntu/practice/cpp/Hackerrank/Cpp/OverloadOperators.cpp","tests":[{"id":1622121809769,"input":"3+i14\n5+i6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/practice/cpp/Hackerrank/Cpp/OverloadOperators.cpp","group":"local","local":true}

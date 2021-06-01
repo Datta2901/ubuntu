@@ -1,0 +1,1 @@
+{"name":"Local: BoxIt","url":"/home/manikanta/ubuntu/practice/cpp/Hackerrank/Cpp/BoxIt.cpp","tests":[{"id":1622047690820,"input":"5\n2 3 4 5\n4\n5\n4\n2 4 6 7","output":"3 4 5\n60\n3 4 5\n60\n4 6 7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/practice/cpp/Hackerrank/Cpp/BoxIt.cpp","group":"local","local":true}

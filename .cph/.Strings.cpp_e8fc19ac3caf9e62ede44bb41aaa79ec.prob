@@ -1,0 +1,1 @@
+{"name":"Local: Strings","url":"/home/manikanta/ubuntu/SRM/DAA/Algorithms/Backtracking/Strings.cpp","tests":[{"id":1622044564393,"input":"ab cd ","output":"2 2\nabcd\ncb ad"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/SRM/DAA/Algorithms/Backtracking/Strings.cpp","group":"local","local":true}
