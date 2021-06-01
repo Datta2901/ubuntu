@@ -1,0 +1,8 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int a,b,c,d;
+    ci
+    return 0;
+}
