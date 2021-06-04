@@ -1,0 +1,1 @@
+{"name":"Local: SummerHeat","url":"/home/manikanta/ubuntu/practice/cpp/Codechef/SummerHeat.cpp","tests":[{"id":1622815784706,"input":"3\n100 400 1000 1200\n100 450 1000 1350\n150 400 1200 1200","output":"13\n13\n11"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/practice/cpp/Codechef/SummerHeat.cpp","group":"local","local":true}

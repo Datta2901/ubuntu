@@ -1,0 +1,1 @@
+{"name":"Local: BellaCiao","url":"/home/manikanta/ubuntu/practice/cpp/Codechef/BellaCiao.cpp","tests":[{"id":1622820140954,"input":"3\n2 1 1 1\n3 2 1 1\n5 2 1 2","output":"3\n4\n13"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/practice/cpp/Codechef/BellaCiao.cpp","group":"local","local":true}
