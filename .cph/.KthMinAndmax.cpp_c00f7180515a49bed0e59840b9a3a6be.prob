@@ -1,0 +1,1 @@
+{"name":"Local: KthMinAndmax","url":"/mnt/d/ACADS/computer programing/DSA Practice/Arrays/KthMinAndmax.cpp","tests":[{"id":1623325548708,"input":"5  2\n1 2 3  5 4","output":"kth minimum is 2\nkth maximum is 4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/d/ACADS/computer programing/DSA Practice/Arrays/KthMinAndmax.cpp","group":"local","local":true}

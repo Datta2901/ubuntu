@@ -1,0 +1,1 @@
+{"name":"Local: MinMaxInArray","url":"/mnt/d/ACADS/computer programing/DSA Practice/Arrays/MinMaxInArray.cpp","tests":[{"id":1623323305811,"input":"5\n1 2 3 4 5","output":"minimum : 1  maximum : 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/d/ACADS/computer programing/DSA Practice/Arrays/MinMaxInArray.cpp","group":"local","local":true}

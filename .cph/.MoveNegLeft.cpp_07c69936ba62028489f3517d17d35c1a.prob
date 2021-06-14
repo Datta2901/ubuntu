@@ -1,0 +1,1 @@
+{"name":"Local: MoveNegLeft","url":"/mnt/d/ACADS/computer programing/DSA Practice/Arrays/MoveNegLeft.cpp","tests":[{"id":1623328647216,"input":"5\n-1 2 3 -4 -1","output":"-1 -4 -1 2 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/d/ACADS/computer programing/DSA Practice/Arrays/MoveNegLeft.cpp","group":"local","local":true}

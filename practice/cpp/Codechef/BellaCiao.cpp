@@ -13,3 +13,6 @@ int main(){
     }
     return 0;
 }
+
+//  D  d
+//  p + p + p + p + Q + p + Q + p + Q + p + 2 Q + p + 2 Q
