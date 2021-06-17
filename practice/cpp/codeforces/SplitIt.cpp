@@ -1,5 +1,3 @@
-// https://codeforces.com/contest/1505/problem/B
-
 #include <bits/stdc++.h>
 #include<vector>
 #include<iostream>
@@ -158,11 +156,33 @@ void isPrime(){
   }
 }
 
+bool CheckPalindrome(string S,int N,int K){
+   for(int i = 0; i < K; i++){
+        if(S[i] != S[N - i - 1]){ 
+            return false;
+        }
+    }
+    return true;
+}
+
 void solve(){
     //code starts from here 
-    int number;
-    cin >> number;
-    cout << (number - 1) % 9 + 1 << endl;
+    int size,k;
+    string word;
+    cin >> size >> k >>  word;
+    if(k == 0){
+        cout << "YES\n";
+        return ;
+    }
+    if(size == 2 * k){
+        cout << "NO\n";
+        return ;
+    }
+    if(CheckPalindrome(word,size,k)){
+        cout << "YES\n";
+    }else{
+        cout << "NO\n";
+    }   
 }
 
 int main(){
@@ -173,8 +193,11 @@ int main(){
         }
     #endif // ONLINE_JUDGE
     EXECUTE_FASTER
-    solve();
+    testcase(){
+        solve();
+    }
    return 0;
 }
 
 
+// a a a a aa

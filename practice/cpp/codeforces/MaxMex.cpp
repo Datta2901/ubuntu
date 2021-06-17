@@ -1,5 +1,3 @@
-// https://codeforces.com/contest/1505/problem/B
-
 #include <bits/stdc++.h>
 #include<vector>
 #include<iostream>
@@ -160,9 +158,10 @@ void isPrime(){
 
 void solve(){
     //code starts from here 
-    int number;
-    cin >> number;
-    cout << (number - 1) % 9 + 1 << endl;
+    int size,k;
+    cin >> size >> k;
+
+    
 }
 
 int main(){
@@ -173,7 +172,9 @@ int main(){
         }
     #endif // ONLINE_JUDGE
     EXECUTE_FASTER
-    solve();
+    testcase(){
+        solve();
+    }
    return 0;
 }
 
