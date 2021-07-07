@@ -20,7 +20,6 @@ int main() {
        if(max<answer){ 
            max=answer;
        }
-
     }
 
     cout << max;
