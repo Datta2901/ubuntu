@@ -1,3 +1,4 @@
+
 #include <bits/stdc++.h>
 #include<vector>
 #include<iostream>
@@ -156,18 +157,25 @@ void isPrime(){
   }
 }
 
-int getmex(vector<int> numbers){
-    int mex = 0;
-    
-    return mex;
-}
 
 void solve(){
-    //code starts from here 
-    int size,k;
-    cin >> size >> k;
-
-    
+    int n;
+    cin >> n;
+    string s;
+    cin >> s;
+    map<string, int> m;
+    for (int i = 0; i < n - 1; i++){
+        m[s.substr(i, 2)]++;
+    }
+    int cnt = 0;
+    string ans = "";
+    for (auto t : m){
+        if (t.second > cnt){
+            cnt = t.second;
+            ans = t.first;
+        }
+    }
+    cout << ans << endl;
 }
 
 int main(){
@@ -178,9 +186,7 @@ int main(){
         }
     #endif // ONLINE_JUDGE
     EXECUTE_FASTER
-    testcase(){
-        solve();
-    }
+    solve();
    return 0;
 }
 

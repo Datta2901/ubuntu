@@ -156,20 +156,33 @@ void isPrime(){
   }
 }
 
-int getmex(vector<int> numbers){
-    int mex = 0;
+void solve()
+{
+    int size;
+    cin >> size;
+    map<int,int>mp;
+    int maxi=0;int mini=INT_MAX,maxI,minI;
+    for(int i=1;i<=size;i++){
+        int k;
+        cin>>k;
+        mp[k]=i;
+        if(maxi < k){
+            maxi = k;
+            maxI = i;
+        }
+        if(mini > k){
+            mini = k;
+            minI = i;
+        }
+        maxi=max(maxi,k);
+        mini=min(mini,k);
+    }
+    int  maxIb = size - maxI + 1 , minIb = size - minI + 1;//since 0 index
     
-    return mex;
-}
-
-void solve(){
-    //code starts from here 
-    int size,k;
-    cin >> size >> k;
-
+    int ans=min({max(maxI,minI),max(maxIb,minIb),maxI+minIb,maxIb+minI});
     
+    cout<<ans<<endl;
 }
-
 int main(){
     #ifdef ONLINE_JUDGE
         if(fopen("input.txt","r")){

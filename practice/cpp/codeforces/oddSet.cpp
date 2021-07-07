@@ -156,18 +156,25 @@ void isPrime(){
   }
 }
 
-int getmex(vector<int> numbers){
-    int mex = 0;
-    
-    return mex;
-}
-
 void solve(){
     //code starts from here 
-    int size,k;
-    cin >> size >> k;
-
-    
+    int size;
+    cin >> size;
+    size *= 2;
+    int a,odd = 0,even = 0;
+    for(int i = 0; i < size; i++){
+        cin >> a;
+        if(a % 2 == 0){
+            even++;
+        }else{
+            odd++;
+        }
+    }
+    if(even == odd){
+        cout << "Yes" << endl;
+    }else{
+        cout << "No" << endl;
+    }   
 }
 
 int main(){

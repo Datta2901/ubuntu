@@ -156,17 +156,25 @@ void isPrime(){
   }
 }
 
-int getmex(vector<int> numbers){
-    int mex = 0;
-    
-    return mex;
-}
-
 void solve(){
     //code starts from here 
-    int size,k;
-    cin >> size >> k;
+    ll n, a, b;
+    cin >> n >> a >> b;
+    ll x = 1;
+    while(x <= n) {
+        if ((n - x) % b == 0) {
+            cout << "Yes\n";
+            return;
+        }
+        x *= a;
+        if (a == 1) {
+            break;
+        }
+    }
+    cout << "No\n";
+}
 
+void getAnswer(){
     
 }
 
