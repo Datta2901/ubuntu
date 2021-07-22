@@ -1,0 +1,1 @@
+{"name":"Local: DeleteAtEnding","url":"/mnt/d/ACADS/SRM/3 rd Year/Sem 1/CCC 2/Day 1/Practice/Answers/DeleteAtEnding.cpp","tests":[{"id":1626874497992,"input":"4\n1\n2\n3\n4\n2","output":"1->2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/d/ACADS/SRM/3 rd Year/Sem 1/CCC 2/Day 1/Practice/Answers/DeleteAtEnding.cpp","group":"local","local":true}

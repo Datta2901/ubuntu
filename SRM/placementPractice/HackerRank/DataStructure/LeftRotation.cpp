@@ -8,7 +8,6 @@ vector<int> rotateLeft(int d, vector<int>& arr) {
         int temp = arr[0];
         arr.erase(arr.begin());
         arr.insert(arr.end(),temp);
-
     }
     return arr;
 }

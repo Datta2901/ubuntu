@@ -47,7 +47,7 @@ int NumberOfOnes(){
 }
 
 bool isPowerOf2(){
-    int n;
+    long long int n;
     cin >> n;
     return (n && !(n & (n - 1)));
 }
@@ -117,8 +117,8 @@ int main(){
     // swap();
     // flipAllBits();
     // cout << NumberOfOnes() << endl;
-    // cout << isPowerOf2() << endl;
-    GenerateAllSubsets();
+    cout << isPowerOf2() << endl;
+    // GenerateAllSubsets();
     // unique();
     // unique2();
  return 0;

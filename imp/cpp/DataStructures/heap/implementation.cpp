@@ -83,9 +83,5 @@ int main(){
     ChangePriority(100,3,H);
     cout << ExtractMax(H) << endl;
 
-
-
-
-
     return 0;
 }
