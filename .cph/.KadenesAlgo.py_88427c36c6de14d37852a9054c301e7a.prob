@@ -1,0 +1,1 @@
+{"name":"Local: KadenesAlgo","url":"/home/manikanta/ubuntu/random/KadenesAlgo.py","tests":[{"id":1627624685479,"input":"2\n5\n-1 2 4 -5  7\n6\n-1 2 3 5 8 -9\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/random/KadenesAlgo.py","group":"local","local":true}

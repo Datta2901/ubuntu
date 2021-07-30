@@ -158,8 +158,19 @@ void isPrime(){
 
 void solve(){
     //code starts from here 
-    
-    
+    int size;
+    cin >> size;
+    int mat[size][5];
+    loop(size){
+        loopv(j,5){
+            cin >> mat[i][j];
+        }
+    }
+    int answer = 0,best = 1;
+    loop(size){
+        if(better(i,best)){
+        }
+    }
 }
 
 int main(){
