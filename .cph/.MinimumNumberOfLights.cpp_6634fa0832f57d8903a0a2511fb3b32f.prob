@@ -1,0 +1,1 @@
+{"name":"Local: MinimumNumberOfLights","url":"/mnt/d/ACADS/computer programing/InterviewBit/Arrays/MinimumNumberOfLights.cpp","tests":[{"id":1628003146638,"input":"8\n0 0 1 1 1 0 0 1\n3","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/d/ACADS/computer programing/InterviewBit/Arrays/MinimumNumberOfLights.cpp","group":"local","local":true}
