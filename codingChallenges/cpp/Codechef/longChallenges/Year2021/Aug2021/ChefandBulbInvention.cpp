@@ -34,7 +34,9 @@ typedef vector< vector<int> > matrix;
 typedef pair<ele,ele> box;
 typedef map<box,int> boxSum ;
 
-
+// Direct Implementation 
+// Space complexity is so high 
+// so not pass
 void solve(){
     int size,p,k;
     cin >> size >> p >> k ;
@@ -70,6 +72,7 @@ void solve(){
     cout << answer + 1 << endl;
 }
 
+// Optimized Solution
 void ApSeries(){
     int size,p,k;
     cin >> size >> p >> k ;
