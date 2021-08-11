@@ -70,19 +70,19 @@ void solve(){
     cout << answer + 1 << endl;
 }
 
-
 void ApSeries(){
-    int n,p,k;
-    cin >> n >> p >> k;
-    int rem = p % k;
-    // cout << (rem)*round(float(n) / k) + round(float(p) / k) + 1  << endl;
-    int t = (((p - rem) / k) + 1);// find nth term in ap
-    if(k == 1){
-        k++;
-    }
-    cout << (rem)*((n) /( k - 1)) + t  << endl;
+    int size,p,k;
+    cin >> size >> p >> k ;
+    int rem1 = size % k,rem2 = p % k;
+    int answer = 0;
+    int t = (((p - rem2) / k) + 1); // find nth term in ap
+    if(rem1 < rem2){
+        answer += rem1;
+    }else{
+        answer += rem2;
+    } 
+    cout << rem2 * (size / k) + answer + t << endl;
 }
-
 
 int main(){
     EXECUTE_FASTER
