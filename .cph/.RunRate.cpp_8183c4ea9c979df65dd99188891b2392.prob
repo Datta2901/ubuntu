@@ -1,0 +1,1 @@
+{"name":"Local: RunRate","url":"/home/manikanta/ubuntu/random/RunRate.cpp","tests":[{"id":1628759044928,"input":"300\n375\n78\n45","output":""},{"id":1628760631455,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/random/RunRate.cpp","group":"local","local":true}

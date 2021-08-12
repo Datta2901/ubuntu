@@ -24,7 +24,8 @@
         "utility": "cpp",
         "iosfwd": "cpp",
         "type_traits": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "map": "cpp"
     },
     "cph.language.cpp.Args": "-std=c++14 -g",
     "cph.general.autoShowJudge": false

@@ -17,7 +17,6 @@ float GetMedian(vector<int> arr1,vector<int> arr2){
 
         }
     }
-
     return 0;
 }
 
