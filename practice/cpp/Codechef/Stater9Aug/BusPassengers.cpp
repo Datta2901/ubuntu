@@ -35,7 +35,6 @@ int main(){
             cout << "Consistent" << endl;
         }else{
             cout << "Inconsistent" << endl;
-
         }
     }
     return 0;
