@@ -1,0 +1,1 @@
+{"name":"Local: SmallestString","url":"/home/manikanta/ubuntu/random/SmallestString.cpp","tests":[{"id":1628847533701,"input":"bcabc","output":""},{"id":1628847560878,"input":"cbacdcbc","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/random/SmallestString.cpp","group":"local","local":true}

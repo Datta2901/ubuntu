@@ -1,0 +1,1 @@
+{"name":"Local: preorder","url":"/home/manikanta/ubuntu/practice/cpp/Hackerrank/Ds/Trees/preorder.cpp","tests":[{"id":1628942712286,"input":"6\n1 2 5 3 6 4","output":"1 2 5 3 4 6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/practice/cpp/Hackerrank/Ds/Trees/preorder.cpp","group":"local","local":true}
