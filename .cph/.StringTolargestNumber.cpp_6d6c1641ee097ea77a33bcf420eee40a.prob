@@ -1,0 +1,1 @@
+{"name":"Local: StringTolargestNumber","url":"/home/manikanta/ubuntu/random/StringTolargestNumber.cpp","tests":[{"id":1629273874229,"input":"2\nAZ ZA","output":"67752"},{"id":1629274828185,"input":"1\nZ","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/random/StringTolargestNumber.cpp","group":"local","local":true}
