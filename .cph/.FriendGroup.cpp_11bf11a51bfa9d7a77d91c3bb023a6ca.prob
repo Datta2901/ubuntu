@@ -1,0 +1,1 @@
+{"name":"Local: FriendGroup","url":"/home/manikanta/ubuntu/practice/cpp/Codechef/Stater9Aug/FriendGroup.cpp","tests":[{"id":1629296614468,"input":"3\n6 2\n010010\n4 0\n1001\n7 2\n1101001\n","output":"1\n2\n1\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/practice/cpp/Codechef/Stater9Aug/FriendGroup.cpp","group":"local","local":true}
