@@ -1,0 +1,1 @@
+{"name":"Local: SmallestMissingNumber","url":"/home/manikanta/ubuntu/random/SmallestMissingNumber.cpp","tests":[{"id":1629784603555,"input":"6\n0 1 3 -1 4 8","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/random/SmallestMissingNumber.cpp","group":"local","local":true}

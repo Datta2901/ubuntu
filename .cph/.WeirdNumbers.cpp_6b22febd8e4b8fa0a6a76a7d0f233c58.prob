@@ -1,0 +1,1 @@
+{"name":"Local: WeirdNumbers","url":"/home/manikanta/ubuntu/random/WeirdNumbers.cpp","tests":[{"id":1630386159807,"input":"5\n54 6 75 45 8","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/random/WeirdNumbers.cpp","group":"local","local":true}
