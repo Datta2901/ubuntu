@@ -25,6 +25,27 @@ vector<int> rotateLeft(int d, vector<int>& arr) {
 // }
 
 
+// class Solution {
+// public:
+//     void rotateRight(vector<int>& arr, int d) {
+// //         int n = nums.size();
+// //         int k = k % n;
+// //         for(int i = 0; i < n; i++){
+            
+// //         }
+//     long long int n =arr.size();
+//     d = d % n;
+//     vector<int>res;
+//     for(int i=d + 1;i<n;i++){
+//         res.push_back(arr[i]);
+//     }
+//     for(int i=0;i<=d;i++){
+//         res.push_back(arr[i]);
+//     }
+//         arr = res;
+//     }
+// };
+
 int main(){
     int size,d;
     cin >> size >> d;
