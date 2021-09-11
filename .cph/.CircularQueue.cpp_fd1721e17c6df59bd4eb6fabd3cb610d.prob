@@ -1,0 +1,1 @@
+{"name":"Local: CircularQueue","url":"/mnt/d/ACADS/SRM/3 rd Year/Sem 1/CCC 2/Part2/Queues/CircularQueue.cpp","tests":[{"id":1630647828649,"input":"5\npush 2\npush 1\npush 3\ntop \npop","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/d/ACADS/SRM/3 rd Year/Sem 1/CCC 2/Part2/Queues/CircularQueue.cpp","group":"local","local":true}

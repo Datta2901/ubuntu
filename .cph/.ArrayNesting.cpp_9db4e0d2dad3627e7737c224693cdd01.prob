@@ -1,0 +1,1 @@
+{"name":"Local: ArrayNesting","url":"/mnt/d/ACADS/computer programing/Leetcode/Contest/Septmeber/ArrayNesting.cpp","tests":[{"id":1630590420172,"input":"5\n4 2 3 1 0","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/d/ACADS/computer programing/Leetcode/Contest/Septmeber/ArrayNesting.cpp","group":"local","local":true}
