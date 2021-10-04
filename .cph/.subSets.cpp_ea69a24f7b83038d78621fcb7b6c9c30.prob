@@ -1,0 +1,1 @@
+{"name":"Local: subSets","url":"/home/manikanta/ubuntu/random/subSets.cpp","tests":[{"id":1633348535603,"input":"3 1 2 1","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/random/subSets.cpp","group":"local","local":true}

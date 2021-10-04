@@ -1,0 +1,1 @@
+{"name":"Local: split","url":"/home/manikanta/ubuntu/random/split.cpp","tests":[{"id":1631624172774,"input":"RLLLRRRLLR","output":"4"},{"id":1631624250497,"input":"RRLL","output":"1"},{"id":1631624394648,"input":"RLRL","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/manikanta/ubuntu/random/split.cpp","group":"local","local":true}
