@@ -25,8 +25,11 @@
         "iosfwd": "cpp",
         "type_traits": "cpp",
         "ostream": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "chrono": "cpp",
+        "limits": "cpp"
     },
     "cph.language.cpp.Args": "-std=c++14 -g",
-    "cph.general.autoShowJudge": false
+    "cph.general.autoShowJudge": false,
+    "code-runner.cwd": "/home/manikanta/ubuntu/.cph"
 }

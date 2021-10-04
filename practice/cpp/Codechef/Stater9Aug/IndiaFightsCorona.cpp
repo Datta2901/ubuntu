@@ -34,7 +34,6 @@ signed main(){
             adj[0].push_back({x, C});
             adj[x].push_back({0, C});
         }
-
         
         while(M--){
             int A, B, D;

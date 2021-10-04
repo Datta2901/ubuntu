@@ -13,3 +13,7 @@ switch between Branches
 git checkout <existing_branch>
 create new branch
 git checkout -b [name_of_your_new_branch]
+
+Change the remote origin 
+
+git remote set-url origin [URL]
