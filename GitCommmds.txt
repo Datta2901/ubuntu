@@ -11,8 +11,12 @@ Branches
 
 switch between Branches
 git checkout <existing_branch>
+
 create new branch
 git checkout -b [name_of_your_new_branch]
+
+git checkout -d [name of your branch] --> to delte only in local
+git checkout --delete [name of branch] --> to delete both local and git
 
 Change the remote origin 
 
